@@ -1,0 +1,23 @@
+extends layout
+block content
+  h1 Match Management
+  hr
+  .container(ng-app="manager")
+    .row
+      .col-sm-3
+        ul.nav.nav-pills.nav-stacked
+          li(role='presentation' ng-class='{active: viewSwitch==kVIEW_ENUM.OVERVIEW}')
+            a(href='#' ng-click='viewSwitch=kVIEW_ENUM.OVERVIEW') Overview
+          li(role='presentation' ng-class='{active: viewSwitch==kVIEW_ENUM.INSERT}')
+            a(href='#' ng-click='viewSwitch=kVIEW_ENUM.INSERT') Add New Match
+          li(role='presentation' ng-class='{active: viewSwitch==kVIEW_ENUM.DELETE}')
+            a(href='#' ng-click='viewSwitch=kVIEW_ENUM.DELETE') Delete a Match
+      .col-sm-9(ng-if='viewSwitch==kVIEW_ENUM.OVERVIEW')
+        include partials/overview.jade
+      .col-sm-9(ng-if='viewSwitch==kVIEW_ENUM.INSERT')
+        include partials/insert.jade
+      .col-sm-9(ng-if='viewSwitch==kVIEW_ENUM.DELETE')
+        include partials/delete.jade
+
+  script(src='/controllers/managerController.js')
+  

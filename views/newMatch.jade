@@ -1,0 +1,40 @@
+extends layout
+block content
+  form.form-horizontal(method="POST", action='/newMatch', enctype="multipart/form-data")
+    fieldset
+      // Form Name
+      legend Add New Match
+      // Text input
+      .form-group
+        label.col-md-4.control-label(for='clothes') Clothes
+        .col-md-4
+          input#clothes.form-control.input-md(name='clothes', type='text', placeholder='eg.cloth1, cloth2, cloth3', required='')
+          span.help-block Separate with comma
+      // Text input
+      .form-group
+        label.col-md-4.control-label(for='price') Price
+        .col-md-4
+          input#price.form-control.input-md(name='price', type='number', placeholder='', required='')
+      .form-group
+        label.col-md-4.control-label(for='radios') Image Upload Options
+        .col-md-4
+          .radio
+            label(for='radios-0')
+              input#uploadOption0(type='radio', name='uploadOption', value='1', checked='checked')
+              |       URL
+          .radio
+            label(for='radios-1')
+              input#uploadOption1(type='radio', name='uploadOption', value='2')
+              |       Upload
+      // Text input
+      .form-group
+        label#imageUploadLabel.col-md-4.control-label(for='image') Image URL
+        .col-md-4
+          input#imageUploadURL.form-control.input-md(name='imageUrl', type='text', placeholder='')
+          input#imageUploadFile(type="file" name="imageFile")
+      // Button
+      .form-group
+        label.col-md-4.control-label(for='submit')
+        .col-md-4
+          button#submit.btn.btn-success(name='submit') Submit
+  script(src="javascripts/newMatch.js" type='text/javascript')

@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    ul
+      each match in matches
+        li
+          p= match.price
+          ul
+            each name in match.clothes
+              li=name
+          img(src="/images/" + match.image)
+    
