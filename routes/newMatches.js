@@ -15,10 +15,6 @@ var uploading = multer({
   storage: storage,
 });
 
-router.get('/', function(req, res) {
-  res.render('newMatch');
-});
-
 router.post('/', uploading.single('imageFile'), function(req, res) {
   var clo = req.body.clothes.split('[,，\s*]');
   console.log(req.file);
