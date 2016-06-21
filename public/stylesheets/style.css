@@ -3,6 +3,37 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+.delete-image {
+  filter: brightness(50%);
+  -webkit-filter:brightness(50%);
+  -moz-filter:brightness(50%);
 }
+
+/* ---- grid ---- */
+
+.delete-grid {
+  max-width: 1200px;
+}
+
+/* clearfix */
+.delete-grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- delete-grid-item ---- */
+
+.delete-grid-item {
+  width: 160px;
+  float: left;
+  border-radius: 5px;
+}
+
+.thumbnail {
+  margin-bottom:5px;
+}
+
+.delete-grid-item--width2 { width: 320px; }
+.delete-grid-item--width3 { width: 480px; }
+.delete-grid-item--width4 { width: 640px; }

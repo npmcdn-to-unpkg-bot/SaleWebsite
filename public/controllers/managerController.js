@@ -10,8 +10,31 @@ app.run(function($rootScope, kVIEW_ENUM) {
   $rootScope.viewSwitch = 0;
 });
 
-app.controller('deleteController', function($scope) {
+app.controller('deleteController', function($scope, $http) {
+  $scope.selectMap = {};
   $scope.select = function(id) {
-    console.log(id);
+    if (!$scope.selectMap[id]) {
+      console.log($scope.selectMap[id]);
+      $scope.selectMap[id] = true;
+    } else {
+      console.log($scope.selectMap[id]);
+      $scope.selectMap[id] = false;
+    }
   };
+  $scope.selectAll = function() {
+    if ($scope.allSelected) {
+      for (var key in $scope.selectMap) {
+        $scope.selectMap[key] = true;
+      }
+    } else {
+      for (var key in $scope.selectMap) {
+        $scope.selectMap[key] = false;
+      }
+    }
+  }
+  $scope.delete = function() {
+    if (confirm("Want to delete selected?")) {
+      console.log('confirmed');
+    }
+  }
 });
