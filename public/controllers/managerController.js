@@ -34,7 +34,13 @@ app.controller('deleteController', function($scope, $http) {
   }
   $scope.delete = function() {
     if (confirm("Want to delete selected?")) {
-      console.log('confirmed');
+      var deleteList = [];
+      for (var key in $scope.selectMap) {
+        if ($scope.selectMap[key]) {
+          deleteList.push(key);
+        }
+      }
+      console.log(deleteList);    
     }
   }
 });
