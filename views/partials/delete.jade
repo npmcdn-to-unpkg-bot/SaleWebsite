@@ -4,7 +4,7 @@ ul(ng-controller='deleteController')
     each match in matches
       .col-lg-3.col-md-4.col-sm-6.thumb
         a.thumbnail(href='#' ng-click='select("' + match.id + '")')
-          img.img-responsive(src="/images/" + match.image style="width:100%")
+          img.img-responsive(src=match.image style="width:100%")
           p(style="text-align:center")
             - for (var i = 0; i < match.clothes.length; ++i) {
             - if (i == match.clothes.length - 1) {

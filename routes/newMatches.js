@@ -16,13 +16,18 @@ var uploading = multer({
 });
 
 router.post('/', uploading.single('imageFile'), function(req, res) {
-  var clo = req.body.clothes.split('[,，\s*]');
-  console.log(req.file);
+  console.log(req.body.clothes);
+  var clo = req.body.clothes.split(/[,，]\s*/);
+  console.log(clo.length);
   var newMatch = new Match({
     clothes: clo,
     price: req.body.price,
-    image: req.body.imageUrl
   });
+  if (!req.file) {
+    newMatch.image = req.body.imageUrl;
+  } else {
+    newMatch.image = '/images/' + req.file.filename;
+  }
   newMatch.save(function(err) {
     if (err) {
       console.log(err);
