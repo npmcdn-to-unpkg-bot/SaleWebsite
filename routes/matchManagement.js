@@ -9,4 +9,8 @@ router.get('/', function(req, res) {
   });
 });
 
+router.post('/delete', function(req, res) {
+  console.log(req.body.list);
+  res.send('received');
+});
 module.exports = router;

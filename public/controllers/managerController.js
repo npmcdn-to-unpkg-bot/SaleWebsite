@@ -40,7 +40,15 @@ app.controller('deleteController', function($scope, $http) {
           deleteList.push(key);
         }
       }
-      console.log(deleteList);    
+      $http({
+        method: 'POST',
+        url: '/matchManagement/delete',
+        data: {list : deleteList}
+      }).then(function successCallback(response) {
+          console.log(response.data);
+      }, function errorCallback(response) {
+          console.log(response.data);
+      });
     }
   }
 });
