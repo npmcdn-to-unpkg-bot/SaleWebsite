@@ -12,11 +12,11 @@ block content
             a(href='#' ng-click='viewSwitch=kVIEW_ENUM.INSERT') Add New Match
           li(role='presentation' ng-class='{active: viewSwitch==kVIEW_ENUM.DELETE}')
             a(href='#' ng-click='viewSwitch=kVIEW_ENUM.DELETE') Delete a Match
-      .col-sm-9(ng-if='viewSwitch==kVIEW_ENUM.OVERVIEW')
+      .col-sm-9(ng-show='viewSwitch==kVIEW_ENUM.OVERVIEW')
         include partials/overview.jade
-      .col-sm-9(ng-if='viewSwitch==kVIEW_ENUM.INSERT')
+      .col-sm-9(ng-show='viewSwitch==kVIEW_ENUM.INSERT')
         include partials/insert.jade
-      .col-sm-9(ng-if='viewSwitch==kVIEW_ENUM.DELETE')
+      .col-sm-9(ng-show='viewSwitch==kVIEW_ENUM.DELETE')
         include partials/delete.jade
 
   script(src='/controllers/managerController.js')

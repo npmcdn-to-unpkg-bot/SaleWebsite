@@ -12,12 +12,11 @@ app.run(function($rootScope, kVIEW_ENUM) {
 
 app.controller('deleteController', function($scope, $http) {
   $scope.selectMap = {};
+  $scope.deleteMap = {};
   $scope.select = function(id) {
     if (!$scope.selectMap[id]) {
-      console.log($scope.selectMap[id]);
       $scope.selectMap[id] = true;
     } else {
-      console.log($scope.selectMap[id]);
       $scope.selectMap[id] = false;
     }
   };
@@ -38,6 +37,7 @@ app.controller('deleteController', function($scope, $http) {
       for (var key in $scope.selectMap) {
         if ($scope.selectMap[key]) {
           deleteList.push(key);
+          $scope.deleteMap[key] = true;
         }
       }
       $http({
@@ -47,9 +47,9 @@ app.controller('deleteController', function($scope, $http) {
       }).then(function successCallback(response) {
           console.log(response.data);
       }, function errorCallback(response) {
-          console.log(response.data);
+          alert("Deletion failed!\n" + response.data);
       });
-      
+
     }
   }
 });

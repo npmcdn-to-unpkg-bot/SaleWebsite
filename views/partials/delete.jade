@@ -13,7 +13,7 @@
   ul
     .delete-grid
       each match in matches
-        .delete-grid-item
+        .delete-grid-item(ng-init="deleteMap['" + match.id + "'] = false" ng-if="!deleteMap['" + match.id + "']")
           a.thumbnail(href='#' ng-click='select("' + match.id + '")')
             img.img-responsive(ng-init="selectMap['" + match.id + "'] = false" src=match.image style="width:100%" ng-class="{'delete-image' : selectMap['" + match.id + "']}")
             p(style="text-align:center")
