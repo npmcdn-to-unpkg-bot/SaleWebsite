@@ -49,6 +49,7 @@ app.controller('deleteController', function($scope, $http) {
       }, function errorCallback(response) {
           console.log(response.data);
       });
+      
     }
   }
 });
