@@ -36,7 +36,16 @@ router.post('/delete', function(req, res) {
   for (var i = 0; i < delList.length; i++) {
     findList.push(mongoose.Types.ObjectId(delList[i]));
   }
-  Match.find({'_id': {$in: findList}}).remove(function(err) {
+  Match.find({'_id': {$in: findList}}, function(err, matches) {
+    if (err) {
+      res.status(500).send('Database Error!');
+    } else {
+      for (var i = 0; i < matches.length; i++) {
+        console.log(matches.image)
+      }
+    }
+  })
+  .remove(function(err) {
     if (err) {
       res.status(500).send('Database Error!');
     } else {
