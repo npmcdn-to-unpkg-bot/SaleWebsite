@@ -10,7 +10,6 @@ var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/test');
 
 var index = require('./routes/index');
-var newMatch = require('./routes/newMatches');
 var matchManagement = require('./routes/matchManagement');
 var app = express();
 
@@ -27,7 +26,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/newMatch', newMatch);
 app.use('/matchManagement', matchManagement);
 
 

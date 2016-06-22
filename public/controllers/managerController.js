@@ -49,7 +49,6 @@ app.controller('deleteController', function($scope, $http) {
       }, function errorCallback(response) {
           alert("Deletion failed!\n" + response.data);
       });
-
     }
   }
 });
