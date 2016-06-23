@@ -2,13 +2,15 @@ form.form-horizontal(method="POST", action='/matchManagement/add', enctype="mult
   fieldset
     // Form Name
     legend Add New Match
-    // Text input
+    .form-group
+      label.col-md-4.control-label(for='matchTitle') Match Title
+      .col-md-4
+        input#matchTitle.form-control.input-md(name='matchTitle', type='text', required='')
     .form-group
       label.col-md-4.control-label(for='clothes') Clothes
       .col-md-4
         input#clothes.form-control.input-md(name='clothes', type='text', placeholder='eg.cloth1, cloth2, cloth3', required='')
         span.help-block Separate with comma
-    // Text input
     .form-group
       label.col-md-4.control-label(for='price') Price
       .col-md-4
@@ -30,6 +32,10 @@ form.form-horizontal(method="POST", action='/matchManagement/add', enctype="mult
       .col-md-4
         input#imageUploadURL.form-control.input-md(name='imageUrl', type='text', placeholder='')
         input#imageUploadFile(type="file" name="imageFile")
+    .form-group
+      label.col-md-4.control-label(for='description') Description (Optional)
+      .col-md-4
+        textarea#description.form-control.input-md(name='description', type='text', rows='4')
     // Button
     .form-group
       label.col-md-4.control-label(for='submit')

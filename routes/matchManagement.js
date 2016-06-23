@@ -75,7 +75,11 @@ router.post('/add', uploading.single('imageFile'), function(req, res) {
   var newMatch = new Match({
     clothes: clo,
     price: req.body.price,
+    matchTitle : req.body.matchTitle
   });
+  if (req.body.description) {
+    newMatch.description = req.body.description;
+  }
   if (!req.file) {
     newMatch.image = req.body.imageUrl;
     newMatch.url = true;

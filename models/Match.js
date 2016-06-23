@@ -5,8 +5,8 @@ var matchSchema = mongoose.Schema({
     image: String,
     price: Number,
     createdAt: {type: Date, default: Date.now},
-    description: String,
-    titleName: String
+    description: {type: String, default: ""},
+    matchTitle: {type: String, default: ""}
 });
 var Match = mongoose.model('Match', matchSchema);
 
