@@ -4,6 +4,7 @@ var router = express.Router();
 var Match = require('../models/Match.js');
 var multer = require('multer');
 var mime = require('mime-types');
+var fs = require('fs');
 
 var storage = multer.diskStorage({
   destination: function (req, file, cb) {
@@ -45,7 +46,9 @@ router.post('/delete', function(req, res, next) {
       res.status(500).send('Database Error!');
     } else {
       for (var i = 0; i < matches.length; i++) {
-        req.fileList.push(matches[i].image);
+        if (!matches[i].url) {
+          req.fileList.push(matches[i].image);
+        }
       }
       next();
     }
@@ -57,6 +60,10 @@ router.post('/delete', function(req, res, next) {
     if (err) {
       res.status(500).send('Database Error!');
     } else {
+      // delete the files from disk
+      for (var i = 0; i < fileList.length; i++) {
+        fs.unlink(__dirname + '/../public' + fileList[i]);
+      }
       res.status(200).send('Deleted');
     }
   });
@@ -71,8 +78,10 @@ router.post('/add', uploading.single('imageFile'), function(req, res) {
   });
   if (!req.file) {
     newMatch.image = req.body.imageUrl;
+    newMatch.url = true;
   } else {
     newMatch.image = '/images/' + req.file.filename;
+    newMatch.url = false;
   }
   newMatch.save(function(err) {
     if (err) {
