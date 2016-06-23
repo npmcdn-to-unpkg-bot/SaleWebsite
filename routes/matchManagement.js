@@ -30,28 +30,37 @@ router.get('/', function(req, res) {
   });
 });
 
-router.post('/delete', function(req, res) {
+router.post('/delete', function(req, res, next) {
   var delList = req.body.list;
-  var findList = [];
+  // init id list
+  var idList = [];
   for (var i = 0; i < delList.length; i++) {
-    findList.push(mongoose.Types.ObjectId(delList[i]));
+    idList.push(mongoose.Types.ObjectId(delList[i]));
   }
-  Match.find({'_id': {$in: findList}}, function(err, matches) {
+  req.idList = idList;
+  req.fileList = [];
+  // use id list to find docs
+  Match.find({'_id': {$in: idList}}, function(err, matches) {
     if (err) {
       res.status(500).send('Database Error!');
     } else {
       for (var i = 0; i < matches.length; i++) {
-        console.log(matches.image)
+        req.fileList.push(matches[i].image);
       }
+      next();
     }
-  })
-  .remove(function(err) {
+  });
+}, function(req, res) {
+  var idList = req.idList;
+  var fileList = req.fileList;
+  Match.find({'_id': {$in: idList}}).remove(function(err) {
     if (err) {
       res.status(500).send('Database Error!');
     } else {
       res.status(200).send('Deleted');
     }
   });
+  console.log(fileList);
 });
 
 router.post('/add', uploading.single('imageFile'), function(req, res) {
