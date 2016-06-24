@@ -52,3 +52,7 @@ app.controller('deleteController', function($scope, $http) {
     }
   }
 });
+
+app.controller('insertController', function($scope) {
+  $scope.uploadMode = 'url';
+});

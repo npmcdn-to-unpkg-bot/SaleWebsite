@@ -1,64 +1,45 @@
-form.form-horizontal(method="POST", action='/matchManagement/add', enctype="multipart/form-data")
-  fieldset
-    // Form Name
-    legend Add New Match
-    .form-group
-      label.col-md-4.control-label(for='matchTitle') Match Title
-      .col-md-4
-        input#matchTitle.form-control.input-md(name='matchTitle', type='text', required='')
-    .form-group
-      label.col-md-4.control-label(for='clothes') Clothes
-      .col-md-4
-        input#clothes.form-control.input-md(name='clothes', type='text', placeholder='eg.cloth1, cloth2, cloth3', required='')
-        span.help-block Separate with comma
-    .form-group
-      label.col-md-4.control-label(for='price') Price
-      .col-md-4
-        input#price.form-control.input-md(name='price', type='number', placeholder='', required='')
-    .form-group
-      label.col-md-4.control-label(for='radios') Image Upload Options
-      .col-md-4
-        .radio
-          label(for='radios-0')
-            input#uploadOption0(type='radio', name='uploadOption', value='1', checked='checked')
-            |       URL
-        .radio
-          label(for='radios-1')
-            input#uploadOption1(type='radio', name='uploadOption', value='2')
-            |       Upload
-    // Text input
-    .form-group
-      label#imageUploadLabel.col-md-4.control-label(for='image') Image URL
-      .col-md-4
-        input#imageUploadURL.form-control.input-md(name='imageUrl', type='text', placeholder='')
-        input#imageUploadFile(type="file" name="imageFile")
-    .form-group
-      label.col-md-4.control-label(for='description') Description (Optional)
-      .col-md-4
-        textarea#description.form-control.input-md(name='description', type='text', rows='4')
-    // Button
-    .form-group
-      label.col-md-4.control-label(for='submit')
-      .col-md-4
-        button#submit.btn.btn-success(name='submit') Submit
-script(type='text/javascript').
-  $(document).ready(function() {
-    init();
-  });
-
-  function init() {
-    $('#imageUploadURL').show();
-    $('#imageUploadFile').hide();
-  }
-
-  $('input[name=uploadOption]:radio').change(function(e) {
-    if (e.target.value == 1) {
-      $('#imageUploadURL').show();
-      $('#imageUploadFile').hide();
-      $('#imageUploadLabel').text("Image URL");
-    } else if (e.target.value == 2) {
-      $('#imageUploadURL').hide();
-      $('#imageUploadFile').show();
-      $('#imageUploadLabel').text("Image File");
-    }
-  });
+#insertWrapper(ng-controller='insertController')
+  form.form-horizontal(method="POST", action='/matchManagement/add', enctype="multipart/form-data")
+    fieldset
+      // Form Name
+      legend Add New Match
+      .form-group
+        label.col-md-4.control-label(for='matchTitle') Match Title
+        .col-md-4
+          input#matchTitle.form-control.input-md(name='matchTitle', type='text', required='')
+      .form-group
+        label.col-md-4.control-label(for='clothes') Clothes
+        .col-md-4
+          input#clothes.form-control.input-md(name='clothes', type='text', placeholder='eg.cloth1, cloth2, cloth3', required='')
+          span.help-block Separate with comma
+      .form-group
+        label.col-md-4.control-label(for='price') Price
+        .col-md-4
+          input#price.form-control.input-md(name='price', type='number', placeholder='', required='')
+      .form-group
+        label.col-md-4.control-label(for='radios') Image Upload Options
+        .col-md-4
+          .radio
+            label(for='radios-0')
+              input#uploadOption0(type='radio', name='uploadOption', ng-model='uploadMode', value='url')
+              |       URL
+          .radio
+            label(for='radios-1')
+              input#uploadOption1(type='radio', name='uploadOption', ng-model='uploadMode', value='upload')
+              |       Upload
+      // Text input
+      .form-group
+        label#imageUploadLabel.col-md-4.control-label(for='image' ng-if='uploadMode == "url"') Image URL
+        label#imageUploadLabel.col-md-4.control-label(for='image' ng-if='uploadMode == "upload"') Image File
+        .col-md-4
+          input#imageUploadURL.form-control.input-md(ng-if='uploadMode == "url"' name='imageUrl', type='text', placeholder='')
+          input#imageUploadFile(ng-if='uploadMode == "upload"' type="file" name="imageFile")
+      .form-group
+        label.col-md-4.control-label(for='description') Description (Optional)
+        .col-md-4
+          textarea#description.form-control.input-md(name='description', type='text', rows='4')
+      // Button
+      .form-group
+        label.col-md-4.control-label(for='submit')
+        .col-md-4
+          button#submit.btn.btn-success(name='submit') Submit
