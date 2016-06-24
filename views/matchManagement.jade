@@ -11,7 +11,7 @@ block content
           li(role='presentation' ng-class='{active: viewSwitch==kVIEW_ENUM.INSERT}')
             a(href='#' ng-click='viewSwitch=kVIEW_ENUM.INSERT') Add New Match
           li(role='presentation' ng-class='{active: viewSwitch==kVIEW_ENUM.DELETE}')
-            a(href='#' ng-click='viewSwitch=kVIEW_ENUM.DELETE') Delete a Match
+            a(href='#' ng-click='viewSwitch=kVIEW_ENUM.DELETE') Delete Matches
       .col-sm-9(ng-show='viewSwitch==kVIEW_ENUM.OVERVIEW')
         include partials/overview.jade
       .col-sm-9(ng-show='viewSwitch==kVIEW_ENUM.INSERT')
