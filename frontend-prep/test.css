@@ -1,158 +1,158 @@
 @font-face {
     font-family: "Futura";
     font-weight: 200;
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774926/1921b76a-df9e-4cc6-ab61-03f57c2f2454.eot?#iefix");
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774926/1921b76a-df9e-4cc6-ab61-03f57c2f2454.eot?#iefix") format("eot"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774926/b5b296d5-bbbc-4936-828d-ff0d8c163a89.woff") format("woff"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774926/dacb7ec9-508a-4a20-a11a-e1c71ad653b8.ttf") format("truetype"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774926/ff86acda-0d1f-4f82-96be-91b0d94bad49.svg#ff86acda-0d1f-4f82-96be-91b0d94bad49") format("svg")
+    src: url("fonts/Futura-200-normal.eot");
+    src: url("fonts/Futura-200-normal.eot") format("eot"), url("fonts/Futura-200-normal.woff") format("woff"), url("fonts/Futura-200-normal.ttf") format("truetype"), url("fonts/Futura-200-normal.svg") format("svg")
 }
 @font-face {
     font-family: "Futura-light-normal";
     font-weight: 200;
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774926/1921b76a-df9e-4cc6-ab61-03f57c2f2454.eot?#iefix");
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774926/1921b76a-df9e-4cc6-ab61-03f57c2f2454.eot?#iefix") format("eot"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774926/b5b296d5-bbbc-4936-828d-ff0d8c163a89.woff") format("woff"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774926/dacb7ec9-508a-4a20-a11a-e1c71ad653b8.ttf") format("truetype"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774926/ff86acda-0d1f-4f82-96be-91b0d94bad49.svg#ff86acda-0d1f-4f82-96be-91b0d94bad49") format("svg")
+    src: url("fonts/Futura-200-normal.eot");
+    src: url("fonts/Futura-200-normal.eot") format("eot"), url("fonts/Futura-200-normal.woff") format("woff"), url("fonts/Futura-200-normal.ttf") format("truetype"), url("fonts/Futura-200-normal.svg") format("svg")
 }
 @font-face {
     font-family: "Futura-200-normal";
     font-weight: 200;
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774926/1921b76a-df9e-4cc6-ab61-03f57c2f2454.eot?#iefix");
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774926/1921b76a-df9e-4cc6-ab61-03f57c2f2454.eot?#iefix") format("eot"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774926/b5b296d5-bbbc-4936-828d-ff0d8c163a89.woff") format("woff"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774926/dacb7ec9-508a-4a20-a11a-e1c71ad653b8.ttf") format("truetype"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774926/ff86acda-0d1f-4f82-96be-91b0d94bad49.svg#ff86acda-0d1f-4f82-96be-91b0d94bad49") format("svg")
+    src: url("fonts/Futura-200-normal.eot");
+    src: url("fonts/Futura-200-normal.eot") format("eot"), url("fonts/Futura-200-normal.woff") format("woff"), url("fonts/Futura-200-normal.ttf") format("truetype"), url("fonts/Futura-200-normal.svg") format("svg")
 }
 @font-face {
     font-family: "Futura";
     font-style: italic;
     font-weight: 200;
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774929/89928ebb-8b1f-4a48-afe9-59d86413b51e.eot?#iefix");
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774929/89928ebb-8b1f-4a48-afe9-59d86413b51e.eot?#iefix") format("eot"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774929/fbc88ad6-417c-45b9-863d-e2234fff7fe9.woff") format("woff"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774929/f118263e-ebe2-4bc4-88ce-3ed0e6b48825.ttf") format("truetype"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774929/99724771-6782-4423-ba8e-041ff1fb7770.svg#99724771-6782-4423-ba8e-041ff1fb7770") format("svg")
+    src: url("fonts/Futura-200-italic.eot");
+    src: url("fonts/Futura-200-italic.eot") format("eot"), url("fonts/Futura-200-italic.woff") format("woff"), url("fonts/Futura-200-italic.ttf") format("truetype"), url("fonts/Futura-200-italic.svg") format("svg")
 }
 @font-face {
     font-family: "Futura-light-italic";
     font-style: italic;
     font-weight: 200;
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774929/89928ebb-8b1f-4a48-afe9-59d86413b51e.eot?#iefix");
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774929/89928ebb-8b1f-4a48-afe9-59d86413b51e.eot?#iefix") format("eot"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774929/fbc88ad6-417c-45b9-863d-e2234fff7fe9.woff") format("woff"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774929/f118263e-ebe2-4bc4-88ce-3ed0e6b48825.ttf") format("truetype"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774929/99724771-6782-4423-ba8e-041ff1fb7770.svg#99724771-6782-4423-ba8e-041ff1fb7770") format("svg")
+    src: url("fonts/Futura-200-italic.eot");
+    src: url("fonts/Futura-200-italic.eot") format("eot"), url("fonts/Futura-200-italic.woff") format("woff"), url("fonts/Futura-200-italic.ttf") format("truetype"), url("fonts/Futura-200-italic.svg") format("svg")
 }
 @font-face {
     font-family: "Futura-200-italic";
     font-style: italic;
     font-weight: 200;
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774929/89928ebb-8b1f-4a48-afe9-59d86413b51e.eot?#iefix");
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774929/89928ebb-8b1f-4a48-afe9-59d86413b51e.eot?#iefix") format("eot"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774929/fbc88ad6-417c-45b9-863d-e2234fff7fe9.woff") format("woff"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774929/f118263e-ebe2-4bc4-88ce-3ed0e6b48825.ttf") format("truetype"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774929/99724771-6782-4423-ba8e-041ff1fb7770.svg#99724771-6782-4423-ba8e-041ff1fb7770") format("svg")
+    src: url("fonts/Futura-200-italic.eot");
+    src: url("fonts/Futura-200-italic.eot") format("eot"), url("fonts/Futura-200-italic.woff") format("woff"), url("fonts/Futura-200-italic.ttf") format("truetype"), url("fonts/Futura-200-italic.svg") format("svg")
 }
 @font-face {
     font-family: "Futura";
     font-weight: 400;
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774932/f846ad08-e9ee-4ad6-9cf7-616084da523c.eot?#iefix");
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774932/f846ad08-e9ee-4ad6-9cf7-616084da523c.eot?#iefix") format("eot"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774932/bc017822-de5a-4b1a-8eed-ed8e06fec708.woff") format("woff"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774932/0ab2192d-e680-4f79-a06b-017307993274.ttf") format("truetype"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774932/90849783-61a3-41a1-928c-0e77e65fe53c.svg#90849783-61a3-41a1-928c-0e77e65fe53c") format("svg")
+    src: url("fonts/Futura-400-normal.eot");
+    src: url("fonts/Futura-400-normal.eot") format("eot"), url("fonts/Futura-400-normal.woff") format("woff"), url("fonts/Futura-400-normal.ttf") format("truetype"), url("fonts/Futura-400-normal.svg") format("svg")
 }
 @font-face {
     font-family: "Futura-book-normal";
     font-weight: 400;
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774932/f846ad08-e9ee-4ad6-9cf7-616084da523c.eot?#iefix");
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774932/f846ad08-e9ee-4ad6-9cf7-616084da523c.eot?#iefix") format("eot"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774932/bc017822-de5a-4b1a-8eed-ed8e06fec708.woff") format("woff"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774932/0ab2192d-e680-4f79-a06b-017307993274.ttf") format("truetype"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774932/90849783-61a3-41a1-928c-0e77e65fe53c.svg#90849783-61a3-41a1-928c-0e77e65fe53c") format("svg")
+    src: url("fonts/Futura-400-normal.eot");
+    src: url("fonts/Futura-400-normal.eot") format("eot"), url("fonts/Futura-400-normal.woff") format("woff"), url("fonts/Futura-400-normal.ttf") format("truetype"), url("fonts/Futura-400-normal.svg") format("svg")
 }
 @font-face {
     font-family: "Futura-400-normal";
     font-weight: 400;
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774932/f846ad08-e9ee-4ad6-9cf7-616084da523c.eot?#iefix");
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774932/f846ad08-e9ee-4ad6-9cf7-616084da523c.eot?#iefix") format("eot"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774932/bc017822-de5a-4b1a-8eed-ed8e06fec708.woff") format("woff"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774932/0ab2192d-e680-4f79-a06b-017307993274.ttf") format("truetype"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774932/90849783-61a3-41a1-928c-0e77e65fe53c.svg#90849783-61a3-41a1-928c-0e77e65fe53c") format("svg")
+    src: url("fonts/Futura-400-normal.eot");
+    src: url("fonts/Futura-400-normal.eot") format("eot"), url("fonts/Futura-400-normal.woff") format("woff"), url("fonts/Futura-400-normal.ttf") format("truetype"), url("fonts/Futura-400-normal.svg") format("svg")
 }
 @font-face {
     font-family: "Futura";
     font-style: italic;
     font-weight: 400;
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774935/8945a25a-7015-4c8a-949a-0cd237f5e9af.eot?#iefix");
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774935/8945a25a-7015-4c8a-949a-0cd237f5e9af.eot?#iefix") format("eot"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774935/fbddffd4-dd46-4bb6-9b09-bfc3925b8207.woff") format("woff"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774935/2097ef84-1652-4b97-ac15-99b36d64f6b8.ttf") format("truetype"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774935/35465047-2124-4018-9d6d-9dfde1797cb2.svg#35465047-2124-4018-9d6d-9dfde1797cb2") format("svg")
+    src: url("fonts/Futura-400-italic.eot");
+    src: url("fonts/Futura-400-italic.eot") format("eot"), url("fonts/Futura-400-italic.woff") format("woff"), url("fonts/Futura-400-italic.ttf") format("truetype"), url("fonts/Futura-400-italic.svg") format("svg")
 }
 @font-face {
     font-family: "Futura-book-italic";
     font-style: italic;
     font-weight: 400;
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774935/8945a25a-7015-4c8a-949a-0cd237f5e9af.eot?#iefix");
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774935/8945a25a-7015-4c8a-949a-0cd237f5e9af.eot?#iefix") format("eot"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774935/fbddffd4-dd46-4bb6-9b09-bfc3925b8207.woff") format("woff"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774935/2097ef84-1652-4b97-ac15-99b36d64f6b8.ttf") format("truetype"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774935/35465047-2124-4018-9d6d-9dfde1797cb2.svg#35465047-2124-4018-9d6d-9dfde1797cb2") format("svg")
+    src: url("fonts/Futura-400-italic.eot");
+    src: url("fonts/Futura-400-italic.eot") format("eot"), url("fonts/Futura-400-italic.woff") format("woff"), url("fonts/Futura-400-italic.ttf") format("truetype"), url("fonts/Futura-400-italic.svg") format("svg")
 }
 @font-face {
     font-family: "Futura-400-italic";
     font-style: italic;
     font-weight: 400;
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774935/8945a25a-7015-4c8a-949a-0cd237f5e9af.eot?#iefix");
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774935/8945a25a-7015-4c8a-949a-0cd237f5e9af.eot?#iefix") format("eot"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774935/fbddffd4-dd46-4bb6-9b09-bfc3925b8207.woff") format("woff"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774935/2097ef84-1652-4b97-ac15-99b36d64f6b8.ttf") format("truetype"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774935/35465047-2124-4018-9d6d-9dfde1797cb2.svg#35465047-2124-4018-9d6d-9dfde1797cb2") format("svg")
+    src: url("fonts/Futura-400-italic.eot");
+    src: url("fonts/Futura-400-italic.eot") format("eot"), url("fonts/Futura-400-italic.woff") format("woff"), url("fonts/Futura-400-italic.ttf") format("truetype"), url("fonts/Futura-400-italic.svg") format("svg")
 }
 @font-face {
     font-family: "Futura";
     font-weight: 600;
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774938/f54fb8d6-5840-4dcd-abb6-a361c3515b63.eot?#iefix");
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774938/f54fb8d6-5840-4dcd-abb6-a361c3515b63.eot?#iefix") format("eot"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774938/ee0094f9-615c-4fc9-8880-4188633debc4.woff") format("woff"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774938/f0081d54-47f3-4cfa-9bc7-8d0318d3eb14.ttf") format("truetype"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774938/f3818821-bb07-46d0-81ff-b2f6559f71be.svg#f3818821-bb07-46d0-81ff-b2f6559f71be") format("svg")
+    src: url("fonts/Futura-200-normal.eot");
+    src: url("fonts/Futura-200-normal.eot") format("eot"), url("fonts/Futura-200-normal.woff") format("woff"), url("fonts/Futura-200-normal.ttf") format("truetype"), url("fonts/Futura-200-normal.svg") format("svg")
 }
 @font-face {
     font-family: "Futura-medium-normal";
     font-weight: 600;
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774938/f54fb8d6-5840-4dcd-abb6-a361c3515b63.eot?#iefix");
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774938/f54fb8d6-5840-4dcd-abb6-a361c3515b63.eot?#iefix") format("eot"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774938/ee0094f9-615c-4fc9-8880-4188633debc4.woff") format("woff"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774938/f0081d54-47f3-4cfa-9bc7-8d0318d3eb14.ttf") format("truetype"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774938/f3818821-bb07-46d0-81ff-b2f6559f71be.svg#f3818821-bb07-46d0-81ff-b2f6559f71be") format("svg")
+    src: url("fonts/Futura-200-normal.eot");
+    src: url("fonts/Futura-200-normal.eot") format("eot"), url("fonts/Futura-200-normal.woff") format("woff"), url("fonts/Futura-200-normal.ttf") format("truetype"), url("fonts/Futura-200-normal.svg") format("svg")
 }
 @font-face {
     font-family: "Futura-600-normal";
     font-weight: 600;
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774938/f54fb8d6-5840-4dcd-abb6-a361c3515b63.eot?#iefix");
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774938/f54fb8d6-5840-4dcd-abb6-a361c3515b63.eot?#iefix") format("eot"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774938/ee0094f9-615c-4fc9-8880-4188633debc4.woff") format("woff"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774938/f0081d54-47f3-4cfa-9bc7-8d0318d3eb14.ttf") format("truetype"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774938/f3818821-bb07-46d0-81ff-b2f6559f71be.svg#f3818821-bb07-46d0-81ff-b2f6559f71be") format("svg")
+    src: url("fonts/Futura-200-normal.eot");
+    src: url("fonts/Futura-200-normal.eot") format("eot"), url("fonts/Futura-200-normal.woff") format("woff"), url("fonts/Futura-200-normal.ttf") format("truetype"), url("fonts/Futura-200-normal.svg") format("svg")
 }
 @font-face {
     font-family: "Futura";
     font-style: italic;
     font-weight: 600;
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774941/c612f409-78f9-45d7-9c99-428d63dc684f.eot?#iefix");
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774941/c612f409-78f9-45d7-9c99-428d63dc684f.eot?#iefix") format("eot"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774941/14fbdf27-5a3c-4cbd-9982-41f7abf80e7c.woff") format("woff"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774941/7ff1896b-3aaa-4596-95a4-883e494f1a8f.ttf") format("truetype"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774941/0c31eb5a-af76-4ede-8f0d-6836955e2ea1.svg#0c31eb5a-af76-4ede-8f0d-6836955e2ea1") format("svg")
+    src: url("fonts/Futura-600-italic.eot");
+    src: url("fonts/Futura-600-italic.eot") format("eot"), url("fonts/Futura-600-italic.woff") format("woff"), url("fonts/Futura-600-italic.ttf") format("truetype"), url("fonts/Futura-600-italic.svg") format("svg")
 }
 @font-face {
     font-family: "Futura-medium-italic";
     font-style: italic;
     font-weight: 600;
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774941/c612f409-78f9-45d7-9c99-428d63dc684f.eot?#iefix");
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774941/c612f409-78f9-45d7-9c99-428d63dc684f.eot?#iefix") format("eot"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774941/14fbdf27-5a3c-4cbd-9982-41f7abf80e7c.woff") format("woff"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774941/7ff1896b-3aaa-4596-95a4-883e494f1a8f.ttf") format("truetype"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774941/0c31eb5a-af76-4ede-8f0d-6836955e2ea1.svg#0c31eb5a-af76-4ede-8f0d-6836955e2ea1") format("svg")
+    src: url("fonts/Futura-600-italic.eot");
+    src: url("fonts/Futura-600-italic.eot") format("eot"), url("fonts/Futura-600-italic.woff") format("woff"), url("fonts/Futura-600-italic.ttf") format("truetype"), url("fonts/Futura-600-italic.svg") format("svg")
 }
 @font-face {
     font-family: "Futura-600-italic";
     font-style: italic;
     font-weight: 600;
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774941/c612f409-78f9-45d7-9c99-428d63dc684f.eot?#iefix");
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774941/c612f409-78f9-45d7-9c99-428d63dc684f.eot?#iefix") format("eot"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774941/14fbdf27-5a3c-4cbd-9982-41f7abf80e7c.woff") format("woff"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774941/7ff1896b-3aaa-4596-95a4-883e494f1a8f.ttf") format("truetype"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774941/0c31eb5a-af76-4ede-8f0d-6836955e2ea1.svg#0c31eb5a-af76-4ede-8f0d-6836955e2ea1") format("svg")
+    src: url("fonts/Futura-600-italic.eot");
+    src: url("fonts/Futura-600-italic.eot") format("eot"), url("fonts/Futura-600-italic.woff") format("woff"), url("fonts/Futura-600-italic.ttf") format("truetype"), url("fonts/Futura-600-italic.svg") format("svg")
 }
 @font-face {
     font-family: "Futura";
     font-weight: 800;
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774944/23ba0be3-70bf-4659-a442-531d2a2d21e1.eot?#iefix");
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774944/23ba0be3-70bf-4659-a442-531d2a2d21e1.eot?#iefix") format("eot"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774944/3f319b0c-7b7f-4315-b8d0-2f4af7d033dd.woff") format("woff"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774944/6f62d6f4-b1d5-442c-b7f4-a00598f1b20c.ttf") format("truetype"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774944/19a28699-af7e-410b-8ae3-5330873504bd.svg#19a28699-af7e-410b-8ae3-5330873504bd") format("svg")
+    src: url("fonts/Futura-800-normal.eot");
+    src: url("fonts/Futura-800-normal.eot") format("eot"), url("fonts/Futura-800-normal.woff") format("woff"), url("fonts/Futura-800-normal.ttf") format("truetype"), url("fonts/Futura-800-normal.svg") format("svg")
 }
 @font-face {
     font-family: "Futura-heavy-normal";
     font-weight: 800;
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774944/23ba0be3-70bf-4659-a442-531d2a2d21e1.eot?#iefix");
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774944/23ba0be3-70bf-4659-a442-531d2a2d21e1.eot?#iefix") format("eot"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774944/3f319b0c-7b7f-4315-b8d0-2f4af7d033dd.woff") format("woff"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774944/6f62d6f4-b1d5-442c-b7f4-a00598f1b20c.ttf") format("truetype"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774944/19a28699-af7e-410b-8ae3-5330873504bd.svg#19a28699-af7e-410b-8ae3-5330873504bd") format("svg")
+    src: url("fonts/Futura-800-normal.eot");
+    src: url("fonts/Futura-800-normal.eot") format("eot"), url("fonts/Futura-800-normal.woff") format("woff"), url("fonts/Futura-800-normal.ttf") format("truetype"), url("fonts/Futura-800-normal.svg") format("svg")
 }
 @font-face {
     font-family: "Futura-800-normal";
     font-weight: 800;
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774944/23ba0be3-70bf-4659-a442-531d2a2d21e1.eot?#iefix");
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774944/23ba0be3-70bf-4659-a442-531d2a2d21e1.eot?#iefix") format("eot"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774944/3f319b0c-7b7f-4315-b8d0-2f4af7d033dd.woff") format("woff"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774944/6f62d6f4-b1d5-442c-b7f4-a00598f1b20c.ttf") format("truetype"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774944/19a28699-af7e-410b-8ae3-5330873504bd.svg#19a28699-af7e-410b-8ae3-5330873504bd") format("svg")
+    src: url("fonts/Futura-800-normal.eot");
+    src: url("fonts/Futura-800-normal.eot") format("eot"), url("fonts/Futura-800-normal.woff") format("woff"), url("fonts/Futura-800-normal.ttf") format("truetype"), url("fonts/Futura-800-normal.svg") format("svg")
 }
 @font-face {
     font-family: "Futura";
     font-style: italic;
     font-weight: 800;
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774947/39d6d3ec-f553-431d-ad4d-558be6242d56.eot?#iefix");
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774947/39d6d3ec-f553-431d-ad4d-558be6242d56.eot?#iefix") format("eot"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774947/a61c0481-706b-455c-aef6-45e4c6d06dc5.woff") format("woff"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774947/d4c3b693-5102-4c08-af3f-bd596a3fc51e.ttf") format("truetype"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774947/77b1eb50-3952-4c75-ae95-c178ac651170.svg#77b1eb50-3952-4c75-ae95-c178ac651170") format("svg")
+    src: url("fonts/Futura-800-italic.eot");
+    src: url("fonts/Futura-800-italic.eot") format("eot"), url("fonts/Futura-800-italic.woff") format("woff"), url("fonts/Futura-800-italic.ttf") format("truetype"), url("fonts/Futura-800-italic.svg") format("svg")
 }
 @font-face {
     font-family: "Futura-heavy-italic";
     font-style: italic;
     font-weight: 800;
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774947/39d6d3ec-f553-431d-ad4d-558be6242d56.eot?#iefix");
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774947/39d6d3ec-f553-431d-ad4d-558be6242d56.eot?#iefix") format("eot"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774947/a61c0481-706b-455c-aef6-45e4c6d06dc5.woff") format("woff"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774947/d4c3b693-5102-4c08-af3f-bd596a3fc51e.ttf") format("truetype"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774947/77b1eb50-3952-4c75-ae95-c178ac651170.svg#77b1eb50-3952-4c75-ae95-c178ac651170") format("svg")
+    src: url("fonts/Futura-800-italic.eot");
+    src: url("fonts/Futura-800-italic.eot") format("eot"), url("fonts/Futura-800-italic.woff") format("woff"), url("fonts/Futura-800-italic.ttf") format("truetype"), url("fonts/Futura-800-italicfonts/Futura-800-italic.svg") format("svg")
 }
 @font-face {
     font-family: "Futura-800-italic";
     font-style: italic;
     font-weight: 800;
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774947/39d6d3ec-f553-431d-ad4d-558be6242d56.eot?#iefix");
-    src: url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774947/39d6d3ec-f553-431d-ad4d-558be6242d56.eot?#iefix") format("eot"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774947/a61c0481-706b-455c-aef6-45e4c6d06dc5.woff") format("woff"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774947/d4c3b693-5102-4c08-af3f-bd596a3fc51e.ttf") format("truetype"), url("https://www.gucci.com/_ui/responsive/common/fonts/futura/774947/77b1eb50-3952-4c75-ae95-c178ac651170.svg#77b1eb50-3952-4c75-ae95-c178ac651170") format("svg")
+    src: url("fonts/Futura-800-italic.eot");
+    src: url("fonts/Futura-800-italic.eot") format("eot"), url("fonts/Futura-800-italic.woff") format("woff"), url("fonts/Futura-800-italic.ttf") format("truetype"), url("fonts/Futura-800-italic.svg") format("svg")
 }
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
