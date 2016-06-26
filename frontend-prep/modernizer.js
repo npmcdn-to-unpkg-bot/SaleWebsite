@@ -297,7 +297,7 @@ window.Modernizr = function(e, t, n) {
             }(this, t), c._version = l, c._prefixes = w, c._domPrefixes = x, c._cssomPrefixes = S, c.hasEvent = _, c.testProp = function(e) {
                 return u([e])
             }, c.testAllProps = f, c.testStyles = M, p.className = p.className.replace(/(^|\s)no-js(\s|$)/, "$1$2") + (h ? " js " + L.join(" ") : ""), c
-    }(this, this.document),
+    } (this, this.document),
     function(e, t, n) {
         function r(e) {
             return "[object Function]" == d.call(e)
