@@ -1,0 +1,1 @@
+define(["jquery"],function(e){var t=e("body"),n="[class*=-home-homepage]",r=e(".product-push"),i="top",s="bottom",o="homepage top",u="homepage bottom";t.is(n)&&r.length>0&&r.each(function(t){t==0&&e(this).addClass(o).removeClass(s),t==1&&e(this).addClass(u).removeClass(i)})});

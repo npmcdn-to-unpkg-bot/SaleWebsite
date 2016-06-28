@@ -1,0 +1,1 @@
+define(["jquery","viewport"],function(e,t){function i(){e("body").on("click",n,s)}function s(n){n.preventDefault();var i=e(this).attr("href");t.scrollTo(i,"#header-main",r)}var n=".jump-link, .scroll-to-target",r=2e3;return{load:function(){i()}}});
