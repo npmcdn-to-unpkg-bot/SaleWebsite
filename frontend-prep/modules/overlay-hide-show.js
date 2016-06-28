@@ -1,0 +1,1 @@
+define(["jquery"],function(e){function i(){t.on("click",".trigger-info",s)}function s(t){var i=n.index(e(this));t.preventDefault(),e(r[i]).slideToggle("slow")}var t=e(".item-info"),n=t.find(".trigger-info"),r=e(".hidden-info");return{load:function(){i()}}});

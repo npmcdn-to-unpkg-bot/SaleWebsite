@@ -1,0 +1,1 @@
+define(["jquery","formEndpointValidation","ajaxConfig","overlay"],function(e,t,n,r){function u(){t.newInstance(o,a)}function a(){r.close(s),window.location.reload()}var i=".change-email-form",s="#change-email",o=e(i);return{load:function(){u()}}});
