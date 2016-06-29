@@ -1,0 +1,1 @@
+define(["jquery","os","slick"],function(e,t){function r(){var r=e(".from-past-events-carousel").find(".carousel-inner");t.isMobileDevice(),e("html").hasClass("mobile")&&(n=6),r.slick("slickFilter",":lt("+n+")")}var n=11;return{load:function(){r()}}});
