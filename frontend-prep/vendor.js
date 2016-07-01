@@ -172,7 +172,6 @@ requirejs.config({
     }(this, function() {
         var e = function() {
                 "use strict";
-
                 function e(e) {
                     this.string = e
                 }
@@ -5573,6 +5572,7 @@ requirejs.config({
         e.ActiveXObject && h(e).on("unload", function() {
             for (var e in Qn) Qn[e](void 0, !0)
         }), l.cors = !!Gn && "withCredentials" in Gn, Gn = l.ajax = !!Gn, Gn && h.ajaxTransport(function(e) {
+            e.url = "https://www.gucci.com" + e.url;
             if (!e.crossDomain || l.cors) {
                 var t;
                 return {
