@@ -155,17 +155,17 @@
 	</div>
 
 	<header class="force-repaint-width move-header-if-lt-ie10 " data-module="header" id="header-main">
-
+		<!-- Logo on top -->
 		<div class="logo">
 			<a href="/us/en/">Gucci</a>
 		</div>
 
+		<!-- bag tag -->
 		<nav id="header-nav-bag-wrapper" class="header-nav-bag-wrapper header-nav-group header-nav-group-hover" data-module="headerUpdate">
 
 			<a class="header-nav-parent-bag header-nav-parent header-nav-parent header-nav-parent-link" href="/us/en/cart">
 				<span class="title">Bag</span>
-				<span class="shopping-bag-product-count">
-		</span>
+				<span class="shopping-bag-product-count"></span>
 				<span class="caret"></span>
 				<span class="caret-overlay"></span>
 			</a>
@@ -174,11 +174,14 @@
 				<div class="header-nav-child-bag-wrapper"></div>
 			</div>
 		</nav>
+
+
 		<a class="header-nav-parent-main header-ssa-display-mobile" href="#header-nav">Menu</a>
 		<a class="header-nav-back" href="#header-nav">Back</a>
 		<nav id="header-nav" class="header-nav-group">
-			<div class="header-nav-drawer header-nav-drawer-child prevent-document-touchmove "></div>
+			<div class="header-nav-drawer header-nav-drawer-child prevent-document-touchmove"></div>
 			<div id="header-nav-child-main" class="header-nav-child header-nav-drawer">
+				<!-- the main navigation tags -->
 				<ul class="header-nav-sections">
 					<!-- Calculate the number of columns to show in each sub-menu. That number is used later in a class. -->
 					<li class="header-nav-section header-nav-section-0 header-nav-group header-nav-group-hover">
@@ -890,6 +893,8 @@
 						</div>
 					</li>
 				</ul>
+
+				<!-- for saved items might be commented-->
 				<ul class="header-nav-user header-nav-secondary">
 					<li id="header-nav-favorites" class="header-nav-group header-nav-group-hover hide" data-module="savedItemsFlyout">
 						<a class="header-nav-parent-favorites header-nav-parent header-nav-parent-link-medium header-nav-item">
@@ -899,17 +904,18 @@
 						<div class="header-nav-child-favorites header-nav-child header-nav-fixed" id="header-nav-favorites">
 						</div>
 						<input type="hidden" id="hasSavedItem" value="false" />
-
 					</li>
 					<li class="header-nav-group header-nav-group-hover" id="header-nav-user">
 						<a class="header-nav-parent-account header-nav-parent header-nav-parent-link header-nav-item"></a>
 					</li>
-
 				</ul>
 
+				<!-- service tags on top-left -->
 				<ul class="header-nav-settings header-nav-secondary">
 					<li class="header-nav-group-ship-to header-nav-group">
+						<!-- The tag -->
 						<a class="header-nav-parent-ship-to header-nav-parent header-nav-item" href="#header-nav-ship-to">Ship to:&nbsp;United States</a>
+						<!-- The modal -->
 						<nav data-module="overlay" class="header-nav-ship-to-overlay-wrapper header-nav-child overlay" id="header-nav-ship-to">
 							<div class="header-nav-ship-to-overlay">
 								<div class="header-nav-ship-to-content-wrapper overlay-wrapper">
@@ -1068,11 +1074,9 @@
 								</div>
 							</div>
 						</nav>
-
 					</li>
 					<li class="header-nav-group header-nav-group-hover disable-nav-group">
-						<span class="header-nav-parent-language header-nav-parent header-nav-item">
-		English</span>
+						<span class="header-nav-parent-language header-nav-parent header-nav-item">English</span>
 					</li>
 					<li class="header-nav-group header-ssa-to-display">
 						<div class="header-nav-assitance-call header-nav-item header-nav-link visible-for-standard overlay-open">
@@ -1082,11 +1086,11 @@
 							<span class="title">Client Services: &nbsp;</span> <a href="tel:+1.877.482.2430" class="phone-number">+1.877.482.2430</a>
 						</div>
 					</li>
-					<!-- .header-nav-group -->
 				</ul>
 			</div>
 		</nav>
 
+		<!-- for logged in, not shown -->
 		<div class="overlay ssa-logged-in-overlay" id="ssa-logged-in" data-module="overlay,signInSalesAssistant">
 			<div class="overlay-wrapper ssa-logged-in-overlay-wrapper">
 				<div class="ssa-logged-in-overlay-content-wrapper">
@@ -1102,17 +1106,11 @@
 							</div>
 						</form>
 					</section>
-					<!-- .overlay-content -->
 				</div>
-				<!-- .overlay-content-wrapper -->
 			</div>
-			<!-- .overlay-wrapper -->
-
 		</div>
 
-
-		<!-- Fixed proper layout for Search + bug with overlapping caret-overlay -->
-
+		<!-- The search field -->
 		<div class="header-nav-group">
 			<a class="header-nav-parent-search header-nav-parent" href="#scroll-wrapper">
 				<span class="title">Search</span>
@@ -1120,8 +1118,7 @@
 				<span class="caret"></span>
 			</a>
 			<form action="/us/en/search" class="header-nav-child" id="header-nav-search" method="get" data-module="searchFlyout">
-				<input type="hidden" id="predictive-search-enabled" value="false" data-autocomplete-enabled="false" data-product-suggestions-enabled="false" data-category-suggestions-enabled="false" data-recent-search-history-enabled="false" data-popular-categories-enabled="false"
-				/>
+				<input type="hidden" id="predictive-search-enabled" value="false" data-autocomplete-enabled="false" data-product-suggestions-enabled="false" data-category-suggestions-enabled="false" data-recent-search-history-enabled="false" data-popular-categories-enabled="false"/>
 				<input type="hidden" id="autocompleteUrl" value="/us/en/search/autocomplete/SearchBoxComponent?term=" />
 				<label class="visually-hidden" for="header-nav-search-input">Search</label>
 				<span id="header-nav-search-input-disabled" data-placeholder='Search products'> </span>
@@ -1129,9 +1126,8 @@
 				<input class="header-nav-child-focus" id="header-nav-search-input" name="text" placeholder="Search" type="text" value="" autocomplete="off" data-trigger-predictive-count="1000" data-placeholder='Search products' />
 				<input class="header-nav-search-submit" type="submit" value="GO" />
 			</form>
-			<!-- #header-nav-search -->
 		</div>
-		<!-- .header-nav-group -->
+		<!-- not parsed, might be commented out -->
 		<script id="template-list-products" type="text/x-handlebars-template">
 			<li class="search-flyout-item">
 				<a href="{{url}}" data-style-id="{{productCode}}">
@@ -1149,6 +1145,7 @@
 			</li>
 		</script>
 
+		<!-- not parsed, might be commented out -->
 		<script id="template-list-categories" type="text/x-handlebars-template">
 			<li class="search-flyout-item">
 				<a href="{{url}}" data-style-id="{{productCode}}">{{title}}</a>
@@ -1163,12 +1160,14 @@
 			</div>
 		</script>
 
+		<!-- not parsed, might be commented out -->
 		<script id="template-no-suggestions" type="text/x-handlebars-template">
 			<li class="search-flyout-item-suggestion">
 				<a href="{{url}}">{{title}}</a>
 			</li>
 		</script>
 
+		<!-- for signed in, not shown, might be commented out -->
 		<script id="header-my-account-menu" type="text/x-handlebars-template">
 			<li class="header-nav-group header-nav-group-hover">
 				<a class="header-nav-parent-account header-nav-parent header-nav-parent-link header-nav-item" href="/account-landing/">My Account</a>
@@ -1186,6 +1185,7 @@
 			</li>
 		</script>
 
+		<!-- shopping bag hover toggle modal -->
 		<script type="text/x-handlebars-template" id="shopping-bag-flyout-template">
 			<div class="header-nav-bag-title _shadow-wrapper-top">Shopping Bag</div>
 			{{#if items}}
@@ -1229,6 +1229,7 @@
 		</script>
 
 		<!-- BUGFIX S15 GR-4523 - Template moved to out of logged in conditional -->
+		<!-- unknown script, might be commented -->
 		<script type="text/x-handlebars-template" id="saved-item-flyout-template">
 			<li class="header-nav-favorites-item header-nav-scroll-snap-item">
 				<a href="{{ url }}">
@@ -1260,9 +1261,9 @@
 		<header class="hero hero-large hero-homepage video-parent HomepageHeroHeader_USCA_June_20" data-module="heroLarge, video">
 			<div class="hero-background-image-large-wrapper">
 				<img class="hero-background-image-large" alt="hero home" data-src="https://media.gucci.com/content/HomepageHeroHeaderSmall_320x408/1466093678/HomepageHeroHeaderSmall_hp-23-stories-june-20_001_Default.jpg" data-src_medium="https://media.gucci.com/content/HomepageHeroHeaderMedium_768x386/1466093678/HomepageHeroHeaderMedium_hp-23-stories-june-20_001_Default.jpg"
-								data-src_medium_retina="https://media.gucci.com/content/HomepageHeroHeaderMedium_1536x772/1466093678/HomepageHeroHeaderMedium_hp-23-stories-june-20_001_Default.jpg" data-src_small="https://media.gucci.com/content/HomepageHeroHeaderSmall_320x408/1466093678/HomepageHeroHeaderSmall_hp-23-stories-june-20_001_Default.jpg"
-								data-src_small_retina="https://media.gucci.com/content/HomepageHeroHeaderSmall_640x816/1466093678/HomepageHeroHeaderSmall_hp-23-stories-june-20_001_Default.jpg" data-src_standard="https://media.gucci.com/content/HomepageHeroHeaderStandard_1600x640/1466093678/HomepageHeroHeaderStandard_hp-23-stories-june-20_001_Default.jpg"
-								data-src_standard_retina="https://media.gucci.com/content/HomepageHeroHeaderStandard_3200x1280/1466093678/HomepageHeroHeaderStandard_hp-23-stories-june-20_001_Default.jpg" src="https://media.gucci.com/content/HomepageHeroHeaderSmall_320x408/1466093678/HomepageHeroHeaderSmall_hp-23-stories-june-20_001_Default.jpg"
+					data-src_medium_retina="https://media.gucci.com/content/HomepageHeroHeaderMedium_1536x772/1466093678/HomepageHeroHeaderMedium_hp-23-stories-june-20_001_Default.jpg" data-src_small="https://media.gucci.com/content/HomepageHeroHeaderSmall_320x408/1466093678/HomepageHeroHeaderSmall_hp-23-stories-june-20_001_Default.jpg"
+					data-src_small_retina="https://media.gucci.com/content/HomepageHeroHeaderSmall_640x816/1466093678/HomepageHeroHeaderSmall_hp-23-stories-june-20_001_Default.jpg" data-src_standard="https://media.gucci.com/content/HomepageHeroHeaderStandard_1600x640/1466093678/HomepageHeroHeaderStandard_hp-23-stories-june-20_001_Default.jpg"
+					data-src_standard_retina="https://media.gucci.com/content/HomepageHeroHeaderStandard_3200x1280/1466093678/HomepageHeroHeaderStandard_hp-23-stories-june-20_001_Default.jpg" src="https://media.gucci.com/content/HomepageHeroHeaderSmall_320x408/1466093678/HomepageHeroHeaderSmall_hp-23-stories-june-20_001_Default.jpg"
 				/>
 				<div class=" loop-opacity-layer ">&nbsp;</div>
 				<!-- .hero-background-image-large -->
@@ -1270,9 +1271,9 @@
 			<!-- .hero-background-image-large-wrapper -->
 
 			<img class="hero-background-image-large hero-background-image-large-holder" alt="hero home" data-src="https://media.gucci.com/content/HomepageHeroHeaderSmall_320x408/1466093678/HomepageHeroHeaderSmall_hp-23-stories-june-20_001_Default.jpg" data-src_medium="https://media.gucci.com/content/HomepageHeroHeaderMedium_768x386/1466093678/HomepageHeroHeaderMedium_hp-23-stories-june-20_001_Default.jpg"
-							data-src_medium_retina="https://media.gucci.com/content/HomepageHeroHeaderMedium_1536x772/1466093678/HomepageHeroHeaderMedium_hp-23-stories-june-20_001_Default.jpg" data-src_small="https://media.gucci.com/content/HomepageHeroHeaderSmall_320x408/1466093678/HomepageHeroHeaderSmall_hp-23-stories-june-20_001_Default.jpg"
-							data-src_small_retina="https://media.gucci.com/content/HomepageHeroHeaderSmall_640x816/1466093678/HomepageHeroHeaderSmall_hp-23-stories-june-20_001_Default.jpg" data-src_standard="https://media.gucci.com/content/HomepageHeroHeaderStandard_1600x640/1466093678/HomepageHeroHeaderStandard_hp-23-stories-june-20_001_Default.jpg"
-							data-src_standard_retina="https://media.gucci.com/content/HomepageHeroHeaderStandard_3200x1280/1466093678/HomepageHeroHeaderStandard_hp-23-stories-june-20_001_Default.jpg" src="https://media.gucci.com/content/HomepageHeroHeaderSmall_320x408/1466093678/HomepageHeroHeaderSmall_hp-23-stories-june-20_001_Default.jpg"
+				data-src_medium_retina="https://media.gucci.com/content/HomepageHeroHeaderMedium_1536x772/1466093678/HomepageHeroHeaderMedium_hp-23-stories-june-20_001_Default.jpg" data-src_small="https://media.gucci.com/content/HomepageHeroHeaderSmall_320x408/1466093678/HomepageHeroHeaderSmall_hp-23-stories-june-20_001_Default.jpg"
+				data-src_small_retina="https://media.gucci.com/content/HomepageHeroHeaderSmall_640x816/1466093678/HomepageHeroHeaderSmall_hp-23-stories-june-20_001_Default.jpg" data-src_standard="https://media.gucci.com/content/HomepageHeroHeaderStandard_1600x640/1466093678/HomepageHeroHeaderStandard_hp-23-stories-june-20_001_Default.jpg"
+				data-src_standard_retina="https://media.gucci.com/content/HomepageHeroHeaderStandard_3200x1280/1466093678/HomepageHeroHeaderStandard_hp-23-stories-june-20_001_Default.jpg" src="https://media.gucci.com/content/HomepageHeroHeaderSmall_320x408/1466093678/HomepageHeroHeaderSmall_hp-23-stories-june-20_001_Default.jpg"
 			/>
 			<!-- .hero-background-image-large -->
 
@@ -3126,8 +3127,6 @@
 		hybris.buildNumber = "287";
 		hybris.mapType = "GOOGLE";
 		hybris.mapURL = "";
-
-
 		/*]]>*/
 	</script>
 
