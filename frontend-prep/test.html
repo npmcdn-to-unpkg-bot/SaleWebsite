@@ -153,14 +153,14 @@
 		<div class="breakpoint small" data-breakpoint="small"></div>
 		<div class="breakpoint retina" data-breakpoint="retina"></div>
 	</div>
-
+<!-- header section -->
 	<header class="force-repaint-width move-header-if-lt-ie10 " data-module="header" id="header-main">
-		<!-- Logo on top -->
+<!-- Logo on top -->
 		<div class="logo">
 			<a href="/us/en/">Gucci</a>
 		</div>
 
-		<!-- bag tag -->
+<!-- bag tag -->
 		<nav id="header-nav-bag-wrapper" class="header-nav-bag-wrapper header-nav-group header-nav-group-hover" data-module="headerUpdate">
 
 			<a class="header-nav-parent-bag header-nav-parent header-nav-parent header-nav-parent-link" href="/us/en/cart">
@@ -178,6 +178,7 @@
 
 		<a class="header-nav-parent-main header-ssa-display-mobile" href="#header-nav">Menu</a>
 		<a class="header-nav-back" href="#header-nav">Back</a>
+<!-- the navigation bar and the tags on the top left-->
 		<nav id="header-nav" class="header-nav-group">
 			<div class="header-nav-drawer header-nav-drawer-child prevent-document-touchmove"></div>
 			<div id="header-nav-child-main" class="header-nav-child header-nav-drawer">
@@ -1089,28 +1090,9 @@
 				</ul>
 			</div>
 		</nav>
+<!-- END the navigation bar -->
 
-		<!-- for logged in, not shown -->
-		<div class="overlay ssa-logged-in-overlay" id="ssa-logged-in" data-module="overlay,signInSalesAssistant">
-			<div class="overlay-wrapper ssa-logged-in-overlay-wrapper">
-				<div class="ssa-logged-in-overlay-content-wrapper">
-					<section class="overlay-content ssa-logged-in-overlay-content">
-						<form action="/us/en/assisted-service/quit" method="post">
-							<input name="CSRFToken" type="hidden" value="2b8d3b33-2166-4150-ad79-1baf13af2001" />
-							<button class="overlay-close overlay-close-button-first" type="button">Close Overlay</button>
-							<div class="ssa-logged-in-overlay-info-wrapper">
-								<p class="overlay-ssa-logged-in-title-standard">OSA/SSA Check-in:</p>
-								<p class="overlay-ssa-logged-in-title-standard overlay-ssa-logged-in-title-standard-name"></p>
-								<button class="full-ssa-logged-out-cta" type="submit">Disconnect</button>
-								<button class="overlay-close full-ssa-logged-in-cta" type="button">Continue</button>
-							</div>
-						</form>
-					</section>
-				</div>
-			</div>
-		</div>
-
-		<!-- The search field -->
+<!-- The search field -->
 		<div class="header-nav-group">
 			<a class="header-nav-parent-search header-nav-parent" href="#scroll-wrapper">
 				<span class="title">Search</span>
@@ -1127,7 +1109,11 @@
 				<input class="header-nav-search-submit" type="submit" value="GO" />
 			</form>
 		</div>
-		<!-- not parsed, might be commented out -->
+<!-- END the search field -->
+
+<!-- not parsed, might be commented out
+These codes are not shown but they might be useful when the backend is done. To make things simpler, I just leave them there commented out-->
+		<!--
 		<script id="template-list-products" type="text/x-handlebars-template">
 			<li class="search-flyout-item">
 				<a href="{{url}}" data-style-id="{{productCode}}">
@@ -1143,9 +1129,10 @@
 					</div>
 				</a>
 			</li>
-		</script>
+		</script>-->
 
 		<!-- not parsed, might be commented out -->
+		<!--
 		<script id="template-list-categories" type="text/x-handlebars-template">
 			<li class="search-flyout-item">
 				<a href="{{url}}" data-style-id="{{productCode}}">{{title}}</a>
@@ -1159,15 +1146,17 @@
 			<a href="#">...READ MORE</a></span></p>
 			</div>
 		</script>
-
+		-->
 		<!-- not parsed, might be commented out -->
+		<!--
 		<script id="template-no-suggestions" type="text/x-handlebars-template">
 			<li class="search-flyout-item-suggestion">
 				<a href="{{url}}">{{title}}</a>
 			</li>
 		</script>
-
+		-->
 		<!-- for signed in, not shown, might be commented out -->
+		<!--
 		<script id="header-my-account-menu" type="text/x-handlebars-template">
 			<li class="header-nav-group header-nav-group-hover">
 				<a class="header-nav-parent-account header-nav-parent header-nav-parent-link header-nav-item" href="/account-landing/">My Account</a>
@@ -1184,8 +1173,9 @@
 				</ul>
 			</li>
 		</script>
-
+		-->
 		<!-- shopping bag hover toggle modal -->
+	<!--
 		<script type="text/x-handlebars-template" id="shopping-bag-flyout-template">
 			<div class="header-nav-bag-title _shadow-wrapper-top">Shopping Bag</div>
 			{{#if items}}
@@ -1212,12 +1202,9 @@
 								{{/if}}
 
 							</ul>
-							<!-- .header-nav-bag-item-details -->
 						</div>
-						<!-- .header-nav-bag-item-info -->
 					</a>
 				</li>
-				<!-- .header-nav-bag-item -->
 				{{/each}}
 			</ul>
 			<div class="header-nav-sub-total _shadow-wrapper-bottom">
@@ -1227,9 +1214,10 @@
 			<a class="header-nav-bag-details" href="/us/en/cart">View Bag Details</a> {{else}}
 			<p class="empty">Currently empty</p> {{/if}}
 		</script>
-
+	-->
 		<!-- BUGFIX S15 GR-4523 - Template moved to out of logged in conditional -->
 		<!-- unknown script, might be commented -->
+	<!--
 		<script type="text/x-handlebars-template" id="saved-item-flyout-template">
 			<li class="header-nav-favorites-item header-nav-scroll-snap-item">
 				<a href="{{ url }}">
@@ -1244,8 +1232,34 @@
 				</a>
 			</li>
 		</script>
+	-->
 	</header>
+<!-- END all header seciton -->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- The main part -->
 	<div id="page">
 		<script type="text/javascript">
 			var videoid = {
@@ -1258,7 +1272,7 @@
 			}
 		</script>
 
-		<!-- The big hero thing -->
+<!-- The big hero thing -->
 		<header class="hero hero-large hero-homepage video-parent HomepageHeroHeader_USCA_June_20" data-module="heroLarge, video">
 			<div class="hero-background-image-large-wrapper">
 				<img class="hero-background-image-large" alt="hero home"
@@ -1272,10 +1286,7 @@
 				src="https://media.gucci.com/content/HomepageHeroHeaderSmall_320x408/1466093678/HomepageHeroHeaderSmall_hp-23-stories-june-20_001_Default.jpg"
 				/>
 				<div class=" loop-opacity-layer ">&nbsp;</div>
-				<!-- .hero-background-image-large -->
 			</div>
-			<!-- .hero-background-image-large-wrapper -->
-
 			<img class="hero-background-image-large hero-background-image-large-holder" alt="hero home"
 				data-src="https://media.gucci.com/content/HomepageHeroHeaderSmall_320x408/1466093678/HomepageHeroHeaderSmall_hp-23-stories-june-20_001_Default.jpg"
 				data-src_medium="https://media.gucci.com/content/HomepageHeroHeaderMedium_768x386/1466093678/HomepageHeroHeaderMedium_hp-23-stories-june-20_001_Default.jpg"
@@ -1286,8 +1297,6 @@
 				data-src_standard_retina="https://media.gucci.com/content/HomepageHeroHeaderStandard_3200x1280/1466093678/HomepageHeroHeaderStandard_hp-23-stories-june-20_001_Default.jpg"
 				src="https://media.gucci.com/content/HomepageHeroHeaderSmall_320x408/1466093678/HomepageHeroHeaderSmall_hp-23-stories-june-20_001_Default.jpg"
 			/>
-			<!-- .hero-background-image-large -->
-
 			<div class="hero-content-wrapper hero-large-content-wrapper">
 				<div class="hero-content-centered">
 					<h1 class="hero-title">
@@ -1296,25 +1305,20 @@
 					</h1>
 					<a class="button-gold shop-the-collection" href="st/capsule/gucci-stories">shop the looks</a>
 				</div>
-				<!-- .hero-content-centered -->
-
 			</div>
-			<!-- .hero-cta-content-wrapper -->
-
 			<div class="hero-diamond">
 				<span class="hero-diamond-icon"></span>
 			</div>
-			<!-- .hero-swag -->
 		</header>
+<!-- END The big hero thing -->
 
-		<!-- .hero-large -->
+<!-- The secitons -->
 		<div class="content gutter">
 			<!-- The handbag section -->
 			<section class="product-push homepage" data-module="view360">
 				<div class="product-push-content-wrapper ">
 					<!-- The main picture and content -->
 					<div class="product-image-wrapper">
-						<!-- 	<img src="https://media.gucci.com/content/$format$/1462348812/ProductPush_eu-431777CDZIT8482_001_Light-GG-Marmont-leather-shoulder-bag.jpg" alt="GG Marmont leather shoulder bag" />  -->
 						<a href="/us/en/ca/women/handbags-c-women-handbags?position=1&listName=ProductPush_eu-431777CDZIT8482_bis">
 							<img alt="" class="product-image static"src="./images/handbag.jpg"/>
 						</a>
@@ -2046,7 +2050,9 @@
 			<!-- .style-news -->
 			<input id="numberOfComponents" type="hidden" value="6" />
 		</div>
+<!-- END the sections -->
 
+<!-- footer -->
 		<footer id="footer-main" class="accordion-wrapper standard" data-module="footer, accordion">
 			<div class="wrapper-back-to-top">
 				<a class="back-to-top" href="#header-main">Back to top</a>
@@ -2274,8 +2280,8 @@
 			</div>
 			<!-- .content-inner -->
 		</footer>
-		<!-- #footer-main -->
-
+<!-- END the footer -->
+<!-- subscribe modal -->
 		<section id="snapchat-overlay" class="overlay snapchat-overlay" data-scrolltotop="false" data-module="overlay">
 			<div class="snapchat-overlay-wrapper">
 				<div class="snapchat-overlay-content-wrapper">
@@ -2679,10 +2685,31 @@
 				</div>
 			</div>
 		</section>
-		<!-- #thank-you-newslette -->
 	</div>
-	<!-- From here are some modals -->
-	<!-- .overlay -->
+<!-- END The main part -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- modals -->
 	<div class="overlay sign-in-overlay" id="sign-in-overlay" data-module="overlay">
 		<div class="overlay-wrapper sign-in-overlay-wrapper">
 			<div class="sign-in-overlay-content-wrapper">
