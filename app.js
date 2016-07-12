@@ -11,6 +11,7 @@ mongoose.connect('mongodb://localhost/test');
 
 var index = require('./routes/index');
 var matchManagement = require('./routes/matchManagement');
+var shopTheLooks = require('./routes/shopTheLooks')
 var app = express();
 
 // view engine setup
@@ -27,6 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'views')));
 
 app.use('/', index);
+app.use('/shop-the-looks', shopTheLooks)
 app.use('/matchManagement', matchManagement);
 
 
