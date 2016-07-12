@@ -2319,16 +2319,16 @@ html.no-js.gt-ie9.gt-ie8.gt-ie7.gt-ie6(lang='en', xmlns:fb='http://www.facebook.
     script(src='https://www.gucci.com/_ui/responsive/common/js/libs/require/require-2.1.11.min.js')
     script.
       require.config({
-      waitSeconds: 0
+          waitSeconds: 0
       });
       require(['vendor'], function(main) {
-      require(['common']);
+          require(['common']);
       });
       requirejs.config({
-      /* Sceneric change */
-      waitSeconds: 0,
-      paths: {
-      googleMaps: (hybris.mapType == 'NAVER' ? 'utils/naver-maps' : 'utils/google-maps'),
-      googleMapsApi: (hybris.mapType == 'NAVER' ? 'utils/naver-maps-api' : 'utils/google-maps-api')
-      }
+          /* Sceneric change */
+          waitSeconds: 0,
+          paths: {
+              googleMaps: (hybris.mapType == 'NAVER' ? 'utils/naver-maps' : 'utils/google-maps'),
+              googleMapsApi: (hybris.mapType == 'NAVER' ? 'utils/naver-maps-api' : 'utils/google-maps-api')
+          }
       });
