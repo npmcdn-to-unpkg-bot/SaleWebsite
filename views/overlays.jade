@@ -1,0 +1,328 @@
+// modals
+#sign-in-overlay.overlay.sign-in-overlay(data-module='overlay')
+  .overlay-wrapper.sign-in-overlay-wrapper
+    .sign-in-overlay-content-wrapper
+      section.overlay-content.sign-in-overlay-content
+        button.overlay-close.overlay-close-button-first(type='button') Close
+        .sign-in-overlay-main-content
+          .sign-in-overlay-title
+            | Sign In
+          .sign-in-overlay-body(data-module='signInAjax')
+            form#loginForm1.sign-in-form1(method='POST', novalidate='novalidate', action='https://www.gucci.com/us/en/j_spring_security_check')
+              input(type='hidden', name='CSRFToken', value='9e24a959-5971-4936-aa7d-40811f261da8')
+              .input-content
+                label.sign-in-label EMAIL ADDRESS
+                input#j_username.input-login-email.input-text-form(type='email', name='j_username', required='required')
+              .input-content
+                label.sign-in-label
+                  | PASSWORD
+                  span.sign-in-form-help  (case sensitive)
+                input#j_password.input-login-pwd.input-text-form(type='password', name='j_password', required='required')
+              .error-message
+              .stay-signed-in
+                .custom-checkbox-white
+                  input#_spring_security_remember_me(checked='', name='_spring_security_remember_me', type='checkbox')
+                  label(for='_spring_security_remember_me')
+                    span.custom-checkbox-grey-copy Stay signed in
+              .call-actions
+                button.continue-with-login.sign-button(type='submit') Sign In
+                .recover-message
+                  a.recover-password.overlay-open(href='#forgot-password-overlay') Forgot your password?
+          // .sign-in-overlay-body
+      // .overlay-content
+    // .overlay-content-wrapper
+  // .overlay-wrapper
+// .overlay
+// global-overlays
+section#form-create-account.article-overlay.overlay.form-create-account(data-module='overlay')
+  .overlay-wrapper
+    .form-overlay-content.overlay-content(data-module='createAccount')
+      button.overlay-close.overlay-close-button-first.close(type='button') Close
+      .overlay-slider-inner
+        .form-overlay-content-padding.form-create-account-content-padding._overlay-slider-active
+          header
+            .overlay-form-title Create An Account
+          form#create-account-form.create-account-form(action='/us/en/signIn/ajax/create-account', method='post')
+            input#CSRFToken(type='hidden', name='CSRFToken', value='9e24a959-5971-4936-aa7d-40811f261da8')
+            .input-box.mail-boxes
+              .required
+                label EMAIL ADDRESS
+                input.create-account-input-mail(type='text', name='create-account-email')
+                .error-text
+              .input-box.password-box.password-box-left
+                .required
+                  label PASSWORD
+                  input.create-account-input-password.password(type='password', name='create-account-password')
+                  .error-text
+              span.indications-mobile
+                | Must be at least SIX characters long and is case sensitive.
+              .input-box.password-box.password-box-right
+                .required
+                  label CONFIRM PASSWORD
+                  input.create-account-input-password-confirmation.password(type='password', name='create-account-password-confirm')
+                  .error-text
+              span.indications
+                | Must be at least SIX characters long and is case sensitive.
+              span.initials-checkbox
+                input#subscribeMailing(type='hidden', name='subscribeMailing', value='false')
+                i#mailing.ico-check
+              .text-check
+                | Subscribe to receive Gucci emails with access to our latest collections, news and more.
+              input.overlay-form-submit(type='submit', value='Create Account')
+          span.create-account-agree
+            | By creating an account, you accept the terms of Gucci's
+            a(href='/us/en/st/privacy-landing')  Privacy Policy
+        // 431 Sprint 12 - Recognized Email section
+        #recognized-email-overlay.recognized-email-overlay
+          .login-overlay-wrapper
+            h2.overlay-title-line
+              | This email is associated with an existing Gucci account.
+            p.overlay-description-line
+              | Enter your password below to sign in to your existing account.
+            form#recognized-email-form(action='/us/en/ajaxLogin/auth')
+              input#CSRFToken(type='hidden', name='CSRFToken', value='9e24a959-5971-4936-aa7d-40811f261da8')
+              .overlay-input-content
+                label.overlay-input-label
+                  | PASSWORD
+                  span.overlay-input-label-span  (case sensitive)
+                input#recognized-email.input-recognized-email-mail(type='hidden', name='j_username')
+                input#recognized-password.input-recognized-email-pwd.input-text-form(type='password', name='j_password')
+                .overlay-error-message
+                .overlay-checkbox-container
+                  .custom-checkbox-grey
+                    input#stay-signed-in(checked='', name='_spring_security_remember_me', type='checkbox')
+                    label(for='stay-signed-in')
+                      span.custom-checkbox-grey-copy Stay signed in
+              button.button-short.continue-to-login.overlay-sign-button Sign In
+            .overlay-recover-message-line
+              a.overlay-recover-password.overlay-open(href='#forgot-password-overlay') Forgot your password?
+            .overlay-other-account-message
+              a.overlay-other-account-link(href='#') Create an account with another email address
+      // .create-account-overlay-inner
+// #form-create-account
+#forgot-password-overlay.overlay.forgot-password-overlay(data-module='overlay, forgotPassword')
+  .overlay-wrapper.forgot-password-overlay-wrapper
+    .forgot-password-overlay-content-wrapper
+      section.overlay-content.forgot-password-overlay-content
+        button.overlay-close.overlay-close-button-first(type='button') Close
+        .forgot-password-inner
+          .forgot-password-overlay-main-content
+            .forgot-password-overlay-title
+              | Forgotten Password
+            .forgot-password-overlay-body
+              .forgot-password-indications
+                .forgot-password-indications-text
+                  | Please enter the email address you registered with, and we will send you a link to reset your password.
+              form#forgot-password-form.forgot-password-form(method='POST')
+                input(type='hidden', name='CSRFToken', value='9e24a959-5971-4936-aa7d-40811f261da8')
+                .forgot-password-form-row
+                  .required
+                    label EMAIL ADDRESS
+                    input.forgot-password-email(type='text', name='email')
+                    .error-text
+                  input.forgot-password-form-submit(type='submit', value='SUBMIT')
+            // .forgot-password-overlay-body
+          .forgot-password-thank-you-overlay-main-content
+            .forgot-password-thank-you-overlay-title
+              | Thank you
+            .forgot-password-thank-you-overlay-body
+              .forgot-password-thank-you-indications
+                .forgot-password-thank-you-indications-text
+                  | An email has been sent with instructions to reset your password.
+              button.forgot-password-thank-you-button
+                | OK
+            // .forgot-password-thank-you-overlay-body
+      // .overlay-content
+    // .overlay-content-wrapper
+  // .overlay-wrapper
+// .overlay
+#your-account-overlay.overlay.your-account-overlay(data-module='overlay, yourAccount')
+  .overlay-wrapper.your-account-overlay-wrapper
+    .your-account-overlay-content-wrapper
+      section.overlay-content.your-account-overlay-content
+        button.overlay-close.overlay-close-button-first(type='button') Close Overlay
+        .your-account-main-content
+          .your-account-overlay-title
+            | Your Account
+          .your-account-overlay-body
+            p.your-account-overlay-copy
+              | Having a Gucci account will give you access to:
+            ul.your-account-overlay-list
+              li Saved items in your wishlist.
+              li Personalized recommendations.
+              li Order delivery updates and return management.
+          .your-account-overlay-buttons
+            a.your-account-overlay-sign-in-cta(href='#sign-in-overlay') Sign In
+            a.your-account-overlay-create-account-cta(href='#form-create-account') Create account
+      // .overlay-content
+    // .overlay-content-wrapper
+  // .overlay-wrapper
+#email-overlay.overlay.email-overlay(data-module='overlay, emailSavedItems')
+  .overlay-wrapper.email-overlay-wrapper
+    .overlay-content-wrapper.email-overlay-content-wrapper
+      section.overlay-content.email-overlay-content
+        button.overlay-close.overlay-close-button-first(type='button') Close
+        header
+          h2.title-bottom-line-diamond Email my Saved Items
+        form.email-overlay-form(action='', method='get')
+          input(type='hidden', name='CSRFToken', value='9e24a959-5971-4936-aa7d-40811f261da8')
+          ul.email-overlay-form-container
+            li.email-overlay-form-input-container.email-overlay-form-input-recipient
+              label.email-overlay-form-label Recipient
+              input.email-overlay-form-input(name='recipient', type='text', placeholder='Name', value='')
+            li.email-overlay-form-input-container.email-overlay-form-input-email
+              label.email-overlay-form-label Email
+              input.email-overlay-form-input(name='emailAddress', type='text', placeholder='To', value='')
+            li.email-overlay-form-input-container.email-overlay-form-buttons
+              button.button-standard.email-overlay-form-send-button(type='submit') Send
+      // .overlay-content
+    // .overlay-content-wrapper
+  // .overlay-wrapper
+// .style-selector-overlay
+script#shopping-bag-order-summary-availability-product-list(type='text/x-handlebars-template').
+  <li>
+  <p class="order-details-availability-product-title">{{title}}</p>
+  <p>{{availability}}</p>
+  <p>Estimated to ship between {{shipDateRange}}</p>
+  </li>
+// Schedule callback confirmation template
+script#contact-us-shedule-call-confirmation(type='text/x-handlebars-template').
+  <p class="thank-you-message">We look forward to speaking with you,&nbsp;{{title.value}} {{last-name}}.</p>
+  <ul>
+  {{#if phone}}
+  <li class="confirmation-information-label">We'll call you back at:<span class="confirmation-information-data callback-phone">
+  {{#if phone-country-code.value}}{{phone-country-code.value}}{{/if}}{{phone}}
+  </span>
+  </li>
+  {{/if}} {{#if email}}
+  <li class="confirmation-information-label">Email:<span class="confirmation-information-data callback-phone">{{email}}</span>
+  </li>
+  {{/if}} {{#if date}}
+  <li class="confirmation-information-label">Date:<span class="confirmation-information-data callback-phone">{{date}}</span>
+  </li>
+  {{/if}} {{#if time-preference.value}}
+  <li class="confirmation-information-label">Time preference:<span class="confirmation-information-data callback-phone">{{time-preference.value}}</span>
+  </li>
+  {{/if}} {{#if language-preference.value}}
+  <li class="confirmation-information-label">Language preference:<span class="confirmation-information-data callback-phone">{{language-preference.value}}</span>
+  </li>
+  {{/if}} {{#if subject.value}}
+  <li class="confirmation-information-label">Subject:<span class="confirmation-information-data callback-phone">{{subject.value}}</span>
+  </li>
+  {{/if}} {{#if order-number}}
+  <li class="confirmation-information-label">Order number:<span class="confirmation-information-data callback-order-number">{{order-number}}</span>
+  </li>
+  {{/if}}
+  </ul>
+// Email Us confirmation template
+script#contact-us-email-us-confirmation(type='text/x-handlebars-template').
+  <p class="thank-you-message">Thank You, {{title.value}} {{last-name}}.</p>
+  <p class="thank-you-message">Your email has been sent to our representatives.</p>
+  <ul>
+  {{#if email}}
+  <li class="confirmation-information-label">We'll email you at:<span class="confirmation-information-data callback-phone"> {{email}}</span>
+  </li>
+  {{/if}} {{#if phone}}
+  <li class="confirmation-information-label">Phone:<span class="confirmation-information-data callback-phone">
+  {{#if phone-country-code.value}}{{phone-country-code.value}}{{/if}}{{phone}}
+  </span>
+  </li>
+  {{/if}} {{#if date}}
+  <li class="confirmation-information-label">Date:<span class="confirmation-information-data callback-phone">{{date}}</span>
+  </li>
+  {{/if}} {{#if subject.value}}
+  <li class="confirmation-information-label">Subject:<span class="confirmation-information-data callback-phone"> {{subject.value}}</span>
+  </li>
+  {{/if}} {{#if order-number}}
+  <li class="confirmation-information-label">Order number:<span class="confirmation-information-data callback-order-number">{{order-number}}</span>
+  </li>
+  {{/if}} {{#if message}}
+  <li class="confirmation-information-label">Inquiry or comment:<span class="confirmation-information-data email-us-inquiry-text">{{message}}</span>
+  </li>
+  {{/if}}
+  </ul>
+// ajax-templates
+.overlay.social-overlay.spinner-wrapper
+  .overlay-wrapper.social-overlay-wrapper
+    .overlay-content-wrapper.social-overlay-content-wrapper
+      section.overlay-content
+        .spinner-content
+// spinner
+.overlay-video-spinner.overlay.social-overlay.spinner-video-wrapper
+  .overlay-wrapper.social-overlay-wrapper
+    .overlay-content-wrapper.social-overlay-content-wrapper
+      section.overlay-content
+        .spinner-content
+// video spinner
+#share-by-email-overlay.overlay.share-by-email-overlay(data-module='overlay, overlayShareByEmail')
+  .overlay-wrapper.share-by-email-overlay-wrapper
+    .overlay-content-wrapper.share-by-email-overlay-content-wrapper
+      section.overlay-content.share-by-email-overlay-content
+        button.overlay-close.overlay-close-button-first(type='button') Close
+        header
+          h1.title-bottom-line-diamond Share with friends
+        form#share-by-email-overlay-form.share-by-email-overlay-form(action='/us/en/ajax/email/shareProduct', method='POST', novalidate='novalidate')
+          input(type='hidden', name='CSRFToken', value='9e24a959-5971-4936-aa7d-40811f261da8')
+          ul.share-by-email-overlay-form-container
+            li.share-by-email-overlay-form-input-container.share-by-email-overlay-form-input-recipient
+              label.share-by-email-overlay-form-label Your Name
+              input.share-by-email-overlay-form-input(name='senderName', type='text', placeholder='Name', value='', required='required')
+            li.share-by-email-overlay-form-input-container.share-by-email-overlay-form-input-recipient
+              label.share-by-email-overlay-form-label Email
+              input.share-by-email-overlay-form-input(name='senderEmail', type='email', placeholder='Email', value='', required='required')
+            li.share-by-email-overlay-form-input-container.share-by-email-overlay-form-input-recipient.share-by-email-overlay-form-fieldset
+              label.share-by-email-overlay-form-label Recipient
+              input.share-by-email-overlay-form-input(name='recipientName1', type='text', placeholder='Name', value='', required='required')
+            li.share-by-email-overlay-form-input-container.share-by-email-overlay-form-input-recipient
+              label.share-by-email-overlay-form-label Email
+              input.share-by-email-overlay-form-input(name='recipientEmail1', type='email', placeholder='To', value='', required='required')
+          // .share-by-email-overlay-form-container
+          .accordion-wrapper.share-by-email-overlay-accordion-wrapper
+            .accordion-item.accordion-item-default.accordion-item-mutually-exclusive.accordion-item-standard.accordion-item-medium.accordion-item-small._close
+              ul
+                li.share-by-email-overlay-form-input-container.share-by-email-overlay-form-input-recipient.custom-checkbox-grey
+                  input#share-by-email-send-more-friends(name='addMoreFriends', type='checkbox')
+                  label(for='share-by-email-send-more-friends')
+                    span.custom-checkbox-grey-copy.share-by-email-overlay-form-label Add more friends
+                    span.accordion-button.share-by-email-send-more-friends-accordion-button
+              ul.share-by-email-overlay-form-container.accordion-drawer
+                li.share-by-email-overlay-form-input-container.share-by-email-overlay-form-input-recipient.share-by-email-overlay-form-fieldset
+                  label.share-by-email-overlay-form-label Recipient
+                  input.share-by-email-overlay-form-input(name='recipientName2', type='text', placeholder='Name', value='')
+                li.share-by-email-overlay-form-input-container.share-by-email-overlay-form-input-recipient
+                  label.share-by-email-overlay-form-label Email
+                  input.share-by-email-overlay-form-input(name='recipientEmail2', type='email', placeholder='Fromvalue=""')
+                li.share-by-email-overlay-form-input-container.share-by-email-overlay-form-input-recipient.share-by-email-overlay-form-fieldset
+                  label.share-by-email-overlay-form-label Recipient
+                  input.share-by-email-overlay-form-input(name='recipientName3', type='text', placeholder='Name', value='')
+                li.share-by-email-overlay-form-input-container.share-by-email-overlay-form-input-recipient
+                  label.share-by-email-overlay-form-label Email
+                  input.share-by-email-overlay-form-input(name='recipientEmail3', type='email', placeholder='From', value='')
+              // .share-by-email-overlay-form-container .accordion-drawer
+            // .accordion-item accordion-item-default
+          // .accordion-wrapper .share-by-email-overlay-accordion-wrapper
+          ul.share-by-email-overlay-form-container
+            li.share-by-email-overlay-form-input-container.share-by-email-overlay-form-input-address-comment.share-by-email-overlay-form-fieldset
+              label.share-by-email-overlay-form-label Comment
+              textarea.share-by-email-overlay-form-input(name='comment', placeholder='Message', optional='')
+            li.share-by-email-overlay-form-input-container.share-by-email-overlay-form-input-recipient.custom-checkbox-grey
+              input#share-by-email-send-copy(name='copyToSender', type='checkbox')
+              label(for='share-by-email-send-copy')
+                span.custom-checkbox-grey-copy.share-by-email-overlay-form-label Send me a copy of this email
+            li.share-by-email-overlay-note
+              | This information will not be used for any purpose other than the sending of this email.
+            li.share-by-email-overlay-form-input-container.share-by-email-overlay-form-buttons
+              button.button-standard.share-by-email-overlay-form-send-button(type='submit') Send
+          // .share-by-email-overlay-form-container
+      // .overlay-content
+    // .overlay-content-wrapper
+  // .overlay-wrapper
+#merging-basket-overlay.overlay.merging-basket-overlay(data-module='overlay')
+  .overlay-wrapper.merging-basket-overlay-wrapper
+.unsupported-browsers-message-wrapper
+  .close-message-button
+  p.unsupported-browser-message-text
+    | You are using an older version of Internet Explorer. As a result, some features of this site may not work optimally.
+    a(href='http://windows.microsoft.com/en-gb/internet-explorer/download-ie', tagert='_blank') For the best site experience possible, please update your browser
+    | .
+    | 			Thank you.
