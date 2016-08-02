@@ -38,23 +38,23 @@ html.no-js.gt-ie9.gt-ie8.gt-ie7.gt-ie6(lang='en', xmlns:fb='http://www.facebook.
     meta(name='viewport', content='initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, width=device-width')
     meta(name='format-detection', content='telephone=no')
     meta(name='apple-mobile-web-app-capable', content='yes')
-    link(rel='apple-touch-icon', href='https://www.gucci.com/_ui/responsive/common/images/GG_Icon_iOS_57.png', sizes='57x57')
-    link(rel='apple-touch-icon', href='https://www.gucci.com/_ui/responsive/common/images/GG_Icon_iOS_72.png', sizes='72x72')
-    link(rel='apple-touch-icon', href='https://www.gucci.com/_ui/responsive/common/images/GG_Icon_iOS_114.png', sizes='114x114')
-    link(rel='apple-touch-icon', href='https://www.gucci.com/_ui/responsive/common/images/GG_Icon_iOS_144.png', sizes='144x144')
+    link(rel='apple-touch-icon', href='images/static-images/GG_Icon_iOS_57.png', sizes='57x57')
+    link(rel='apple-touch-icon', href='images/static-images/GG_Icon_iOS_72.png', sizes='72x72')
+    link(rel='apple-touch-icon', href='images/static-images/GG_Icon_iOS_114.png', sizes='114x114')
+    link(rel='apple-touch-icon', href='images/static-images/GG_Icon_iOS_144.png', sizes='144x144')
     // END PRODUCT DETAIL PAGE SPECIFIC META
-    link(rel='shortcut icon', href='https://www.gucci.com/_ui/responsive/common/images/favicon.png')
+    link(rel='shortcut icon', href='images/static-images/favicon.png')
     title= title
     // [if gt IE 9] <!
     link(rel='stylesheet', href='test.css')
     // <![endif]
     //if lte IE 9
-      link(rel='stylesheet', href='https://www.gucci.com/_ui/responsive/common/css/ajax.fonts.css?v=287')
-      link(rel='stylesheet', href='https://www.gucci.com/_ui/responsive/common/css/global.css?v=287')
-      link(rel='stylesheet', href='https://www.gucci.com/_ui/responsive/common/css/modules.standard.css?v=287')
-      link(rel='stylesheet', href='https://www.gucci.com/_ui/responsive/common/css/modules.large.css?v=287')
-      link(rel='stylesheet', href='https://www.gucci.com/_ui/responsive/common/css/modules.medium.css?v=287')
-      link(rel='stylesheet', href='https://www.gucci.com/_ui/responsive/common/css/modules.small.css?v=287')
+    //- link(rel='stylesheet', href='https://www.gucci.com/_ui/responsive/common/css/ajax.fonts.css?v=287')
+    //- link(rel='stylesheet', href='https://www.gucci.com/_ui/responsive/common/css/global.css?v=287')
+    //- link(rel='stylesheet', href='https://www.gucci.com/_ui/responsive/common/css/modules.standard.css?v=287')
+    //- link(rel='stylesheet', href='https://www.gucci.com/_ui/responsive/common/css/modules.large.css?v=287')
+    //- link(rel='stylesheet', href='https://www.gucci.com/_ui/responsive/common/css/modules.medium.css?v=287')
+    //- link(rel='stylesheet', href='https://www.gucci.com/_ui/responsive/common/css/modules.small.css?v=287')
     script(src='modernizer.js')
     script.
       analyticsEvent = function() {};
@@ -64,9 +64,8 @@ html.no-js.gt-ie9.gt-ie8.gt-ie7.gt-ie6(lang='en', xmlns:fb='http://www.facebook.
       var pageType = "";
       dataLayer = [];
     // Start - GUCUAT-2847
-    //
-      Script adapted from the version in here:
-      http://www.envano.com/2015/04/clear-facebooks-open-graph-cache-on-demand-with-this-snippet-of-javascript/
+    // Script adapted from the version in here:
+    // http://www.envano.com/2015/04/clear-facebooks-open-graph-cache-on-demand-with-this-snippet-of-javascript/
     script(type='text/javascript').
       //Feature check browsers for support
       if (document.addEventListener && window.XMLHttpRequest && document.querySelector) {
