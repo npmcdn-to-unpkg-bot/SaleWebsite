@@ -46,7 +46,7 @@ html.no-js.gt-ie9.gt-ie8.gt-ie7.gt-ie6(lang='en', xmlns:fb='http://www.facebook.
     link(rel='shortcut icon', href='images/static-images/favicon.png')
     title= title
     // [if gt IE 9] <!
-    link(rel='stylesheet', href='test.css')
+    link(rel='stylesheet', href='index.css')
     // <![endif]
     //if lte IE 9
     //- link(rel='stylesheet', href='https://www.gucci.com/_ui/responsive/common/css/ajax.fonts.css?v=287')
@@ -69,28 +69,28 @@ html.no-js.gt-ie9.gt-ie8.gt-ie7.gt-ie6(lang='en', xmlns:fb='http://www.facebook.
     script(type='text/javascript').
       //Feature check browsers for support
       if (document.addEventListener && window.XMLHttpRequest && document.querySelector) {
-      //DOM is ready
-      document.addEventListener("DOMContentLoaded", function() {
-      var httpRequest = new XMLHttpRequest();
-      //Default URL to send to Facebook
-      var url = window.location;
-      //og:url and og:image elements
-      var og_url = document.querySelector("meta[property='og:url']");
-      var og_image = document.querySelector("meta[property='og:image']");
-      //Check if og:url element is present on page
-      if (og_url && og_image) {
-      //Get the content attribute value of og:url
-      var og_url_value = og_url.getAttribute("content");
-      var og_image_value = og_image.getAttribute("content");
-      //If og:url and og:image content attribute aren't empty
-      if (og_url_value != "" && og_image_value != "") {
-      httpRequest.open("POST", "https://graph.facebook.com", true);
-      url = og_url_value;
-      //Send AJAX
-      httpRequest.send("scrape=true&id=" + encodeURIComponent(url));
-      }
-      }
-      });
+        //DOM is ready
+        document.addEventListener("DOMContentLoaded", function() {
+          var httpRequest = new XMLHttpRequest();
+          //Default URL to send to Facebook
+          var url = window.location;
+          //og:url and og:image elements
+          var og_url = document.querySelector("meta[property='og:url']");
+          var og_image = document.querySelector("meta[property='og:image']");
+          //Check if og:url element is present on page
+          if (og_url && og_image) {
+          //Get the content attribute value of og:url
+          var og_url_value = og_url.getAttribute("content");
+          var og_image_value = og_image.getAttribute("content");
+          //If og:url and og:image content attribute aren't empty
+          if (og_url_value != "" && og_image_value != "") {
+            httpRequest.open("POST", "https://graph.facebook.com", true);
+            url = og_url_value;
+            //Send AJAX
+            httpRequest.send("scrape=true&id=" + encodeURIComponent(url));
+          }
+          }
+        });
       }
     // End - GUCUAT-2847
     script(src='https://cdn.optimizely.com/js/5016740305.js')
