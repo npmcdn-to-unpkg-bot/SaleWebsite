@@ -8,90 +8,22 @@ doctype html
 //if IE 9
   html.no-js.lt-ie10.gt-ie8.gt-ie7.gt-ie6(lang='en', xmlns:fb='http://www.facebook.com/2008/fbml', xmlns:og='http://opengraphprotocol.org/schema')
 // [if gt IE 9] <!
-html.no-js.gt-ie9.gt-ie8.gt-ie7.gt-ie6(lang='en', xmlns:fb='http://www.facebook.com/2008/fbml', xmlns:og='http://opengraphprotocol.org/schema')
+  html.no-js.gt-ie9.gt-ie8.gt-ie7.gt-ie6(lang='en', xmlns:fb='http://www.facebook.com/2008/fbml', xmlns:og='http://opengraphprotocol.org/schema')
   // <![endif]
   head
     meta(charset='utf-8')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge')
     // Technical specification provided with story GUC-433
     meta(name='title', content='#{title}')
     // Technical specification provided with story GUC-433
     meta(name='description', content='#{description}')
-    // Technical specification provided with story GUC-433
-    // START PRODUCT DETAIL PAGE SPECIFIC META
-    // Technical specification provided with story GUC-451
-    meta(property='fb:app_id', content='')
-    meta(property='og:type', content='')
-    // Technical specification provided with story GUC-433
-    meta(property='og:title', content='#{title}')
-    meta(property='og:description', content='#{description}')
-    // Technical specification provided with story GUC-433
-    // Technical specification provided with story GUC-451
-    meta(property='og:url', content='')
-    meta(name='twitter:card', content='gallary')
-    meta(name='twitter:site', content='@gucci')
-    meta(name='twitter:creator', content='@gucci')
-    meta(name='twitter:domain', content='gucci.com')
-    meta(name='twitter:title', content='')
-    meta(name='twitter:description', content='')
-    // END PRODUCT DETAIL PAGE SPECIFIC META
-    meta(name='viewport', content='initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, width=device-width')
-    meta(name='format-detection', content='telephone=no')
-    meta(name='apple-mobile-web-app-capable', content='yes')
     link(rel='apple-touch-icon', href='images/static-images/GG_Icon_iOS_57.png', sizes='57x57')
     link(rel='apple-touch-icon', href='images/static-images/GG_Icon_iOS_72.png', sizes='72x72')
     link(rel='apple-touch-icon', href='images/static-images/GG_Icon_iOS_114.png', sizes='114x114')
     link(rel='apple-touch-icon', href='images/static-images/GG_Icon_iOS_144.png', sizes='144x144')
-    // END PRODUCT DETAIL PAGE SPECIFIC META
     link(rel='shortcut icon', href='images/static-images/favicon.png')
     title= title
-    // [if gt IE 9] <!
     link(rel='stylesheet', href='index.css')
-    // <![endif]
-    //if lte IE 9
-    //- link(rel='stylesheet', href='https://www.gucci.com/_ui/responsive/common/css/ajax.fonts.css?v=287')
-    //- link(rel='stylesheet', href='https://www.gucci.com/_ui/responsive/common/css/global.css?v=287')
-    //- link(rel='stylesheet', href='https://www.gucci.com/_ui/responsive/common/css/modules.standard.css?v=287')
-    //- link(rel='stylesheet', href='https://www.gucci.com/_ui/responsive/common/css/modules.large.css?v=287')
-    //- link(rel='stylesheet', href='https://www.gucci.com/_ui/responsive/common/css/modules.medium.css?v=287')
-    //- link(rel='stylesheet', href='https://www.gucci.com/_ui/responsive/common/css/modules.small.css?v=287')
     script(src='modernizer.js')
-    script.
-      analyticsEvent = function() {};
-      analyticsSocial = function() {};
-      analyticsVPV = function() {};
-      analyticsForm = function() {};
-      var pageType = "";
-      dataLayer = [];
-    // Start - GUCUAT-2847
-    // Script adapted from the version in here:
-    // http://www.envano.com/2015/04/clear-facebooks-open-graph-cache-on-demand-with-this-snippet-of-javascript/
-    script(type='text/javascript').
-      //Feature check browsers for support
-      if (document.addEventListener && window.XMLHttpRequest && document.querySelector) {
-        //DOM is ready
-        document.addEventListener("DOMContentLoaded", function() {
-          var httpRequest = new XMLHttpRequest();
-          //Default URL to send to Facebook
-          var url = window.location;
-          //og:url and og:image elements
-          var og_url = document.querySelector("meta[property='og:url']");
-          var og_image = document.querySelector("meta[property='og:image']");
-          //Check if og:url element is present on page
-          if (og_url && og_image) {
-          //Get the content attribute value of og:url
-          var og_url_value = og_url.getAttribute("content");
-          var og_image_value = og_image.getAttribute("content");
-          //If og:url and og:image content attribute aren't empty
-          if (og_url_value != "" && og_image_value != "") {
-            httpRequest.open("POST", "https://graph.facebook.com", true);
-            url = og_url_value;
-            //Send AJAX
-            httpRequest.send("scrape=true&id=" + encodeURIComponent(url));
-          }
-          }
-        });
-      }
     // End - GUCUAT-2847
     script(src='https://cdn.optimizely.com/js/5016740305.js')
 
