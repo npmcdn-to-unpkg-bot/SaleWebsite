@@ -6,7 +6,7 @@ requirejs.config({
             async: "libs/async",
             handlebars: "libs/handlebars/handlebars",
             jquery: "libs/jquery/jquery-1.11.1.min",
-            
+            reel: "libs/jquery/jquery.reel",
             tweenMax: "libs/tweenmax/TweenMax.min",
             zClip: "libs/jquery/jquery.zclip",
             datePicker: "libs/jquery/jquery.zebra.datepicker.modified",
