@@ -587,7 +587,19 @@ block body
 
       include footer
       include overlays
-    
+    script(type='text/javascript', src='hybris.js')
+    script(type='text/javascript').
+      /*<![CDATA[*/
+      hybris.contextPath = "/us/en";
+      hybris.commonResourcePath = "https://www.gucci.com/_ui/responsive/common";
+      hybris.themeResourcePath = "https://www.gucci.com/_ui/responsive/theme-gucci";
+      hybris.siteResourcePath = "https://www.gucci.com/_ui/responsive/site-gucci-us";
+      hybris.preLoadedDeliveryModes = "";
+      hybris.CSRFToken = "9e24a959-5971-4936-aa7d-40811f261da8";
+      hybris.buildNumber = "287";
+      hybris.mapType = "GOOGLE";
+      hybris.mapURL = "";
+      /*]]>*/
     // Merge 23/09/2015 - require moved from head tag
     script(src='libs/require/require-2.1.11.min.js')
     script.
