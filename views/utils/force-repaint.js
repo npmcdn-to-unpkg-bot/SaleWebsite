@@ -1,1 +1,0 @@
-define(["jquery","os","viewport"],function(e,t,n){function s(){t.isCompatible()||(n.resizeHeight(function(){o(r)}),n.resizeWidth(function(){o(i)}))}function o(e){e.css("display","table").height(),e.css("display","")}var r=e(".force-repaint-height"),i=e(".force-repaint-width");return s(),{load:s,repaint:function(e){o(e)}}});

@@ -1,1 +1,0 @@
-define(["jquery","os"],function(e,t){function r(){var r=e("html");t.isMobileDevice(),t.isIOSDevice(),(!r.hasClass("mobile")||!r.hasClass("tablet"))&&n.removeAttr("href").addClass("no-device")}var n=e(".detect-phone");return{load:function(){r()}}});

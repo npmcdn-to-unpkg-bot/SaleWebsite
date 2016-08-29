@@ -1,1 +1,0 @@
-define(["jquery"],function(e){function t(){e(function(){var t=hybris.commonResourcePath+"/css/ajax.fonts.css?v="+hybris.buildNumber;document.createStyleSheet?document.createStyleSheet(t):e("head").append('<link rel="stylesheet" href="'+t+'">')})}return{load:t()}});

@@ -1,1 +1,0 @@
-define([],function(){function e(){}function t(e,t){n(e)&&e(t)}function n(e){var t={};return e&&t.toString.call(e)==="[object Function]"}return e(),{fireCallbacks:function(e,n){var r=e.length;for(var i=0;i<r;i++)t(e[i],n)}}});

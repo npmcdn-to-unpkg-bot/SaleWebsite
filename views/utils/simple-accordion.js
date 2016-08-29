@@ -1,1 +1,0 @@
-define(["jquery"],function(e){function r(){t.on("click",i)}function i(r){var i=t.index(r.target);e(n[i]).toggleClass("_active"),e(r.target).toggleClass("_active")}var t=e(".simple-trigger"),n=e(".simple-target");return{load:function(){r()}}});
