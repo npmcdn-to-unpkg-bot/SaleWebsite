@@ -1,1 +1,0 @@
-define(["jquery","ajaxConfig","formEndpointValidation"],function(e,t,n){function s(){n.newInstance(i,o,o,"inline")}function o(t){t.status&&t.status==="ok"&&e(document).trigger("shopping-bag.remove",t)}var r=t.getRemoteService("SHOPPING-BAG-REMOVE-ITEM-ENDPOINT"),i=null;return{removeFromShoppingBag:function(e){i=e,i.prop("action",r),s()}}});

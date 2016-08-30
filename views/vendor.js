@@ -7,23 +7,23 @@ requirejs.config({
             copyLink: "modules/copy-link",
             createAccount: "modules/create-account",
             dropdownFlags: "modules/dropdown-flags",
+            emailSavedItems: "modules/email-saved-items",
             formEndpointValidation: "modules/form-endpoint-validation",
             formValidation: "modules/form-validation",
             forgotPassword: "modules/forgot-password",
             giantLook: "modules/giant-look",
+            gucciJsonHtml: "modules/gucciJson-Html",
+            headerUpdate: "modules/header-update",
             heroLarge: "modules/hero-large",
             jsonHtml: "modules/json-html",
             overlayShareByEmail: "modules/overlay-share-by-email",
             savedItems: "modules/saved-items",
-            emailSavedItems: "modules/email-saved-items",
             searchFlyout: "modules/search-flyout",
             signInAjax: "modules/sign-in-ajax",
             thankYouNewsletter: "modules/thank-you-newsletter",
             video: "modules/video",
             view360: "modules/view-360",
-            yourAccount: "modules/your-account",
-            headerUpdate: "modules/header-update",
-            gucciJsonHtml: "modules/gucciJson-Html"
+            yourAccount: "modules/your-account"
         },
         shim: {
             select: {
