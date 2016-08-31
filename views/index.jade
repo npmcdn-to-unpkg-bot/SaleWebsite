@@ -333,75 +333,8 @@ block body
                       data-src_standard='images/boots-modal/757x527.jpg', 
                       data-src_standard_retina='images/boots-modal/1514x1054.jpg', 
                       src='images/boots-modal/456x317.jpg', alt='copy-image')
-        // The video
-        section.homepage-video.video-parent(data-module='video')
-          .homepage-video-copy
-            .title
-              | In show
-            .copy
-              | Men's Spring Summer 2017
-            .play-video
-              a.play._disabled.play-gold(data-video_id='homepage-video', href='#homepage-video')
-                | Play
-          figure.homepage-video-background
-            img(alt='hero home', 
-            data-src_small='images/video-cover/519x700.jpg', 
-            data-src_small_retina='images/video-cover/1038x1400.jpg', 
-            data-src_medium='images/video-cover/768x448.jpg', 
-            data-src_medium_retina='images/video-cover/1536x896.jpg', 
-            data-src_standard='images/video-cover/1300x758.jpg', 
-            data-src_standard_retina='images/video-cover/2600x1516.jpg', 
-            data-src='images/video-cover/519x700.jpg', 
-            src='images/video-cover/519x700.jpg')
-          script(language='JavaScript', type='text/javascript', src='videoApi.js')
-          section.video-inline.video-inline-parent
-            .video-wrapper
-              .video-first-wrapper
-                .video-second-wrapper(style='display: block;')
-                  video.video-js(data-video-id='4961885854001', data-account='2924921183001', data-player='6e5bb347-d0c5-4df8-bd39-c3085b88eed5', data-embed='default', controls='', preload='none')
-                  script(src='videoIndex.js')
-
-              .video-actions
-                a.video-actions-item.video-share(href='#homepage-video-small-share')
-                  | Share
-                a.video-actions-item.video-close(data-video_id='homepage-video')
-                  | Close
-            // .video-wrapper
-            .share-wrapper
-              aside#homepage-video-small-share.social-overlay-inline
-                .social-overlay-inline-content
-                  header.social-overlay-header
-                    h5.eyebrow Share This
-                    h3 In show
-                  .social-overlay-icons
-                    ul
-                      li.social-overlay-icon
-                        a.share-facebook(href='http://www.facebook.com/sharer/sharer.php?u=http://video.gucci.com/services/player/bcpid3000958488001?bctid=4961885854001&bckey=AQ~~,AAACqQLjWxk~,J7Lh4wJ33UoyWTc6fLJFK6Rrk__1umr-', onclick="window.open(this.href, 'gucci',\
-                        'left=20,top=20,width=600,height=500,toolbar=1,resizable=0'); return false;")
-                          span Facebook
-                      li.social-overlay-icon
-                        a.share-twitter(href='https://twitter.com/share?url=http%3A%2F%2Fvideo.gucci.com%2Fservices%2Fplayer%2Fbcpid3000958488001%3Fbctid%3D4961885854001%26bckey%3DAQ%7E%7E%2CAAACqQLjWxk%7E%2CJ7Lh4wJ33UoyWTc6fLJFK6Rrk__1umr-&text=In+show&via=Gucci', onclick="window.open(this.href, 'gucci',\
-                        'left=20,top=20,width=600,height=500,toolbar=1,resizable=0'); return false;")
-                          span Twitter
-                      li.social-overlay-icon
-                        a.share-pinterest(href='http://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fvideo.gucci.com%2Fservices%2Fplayer%2Fbcpid3000958488001%3Fbctid%3D4961885854001%26bckey%3DAQ%7E%7E%2CAAACqQLjWxk%7E%2CJ7Lh4wJ33UoyWTc6fLJFK6Rrk__1umr-&media=http://media.gucci.com/content/HomepageVideoBackgroundSmall_519x700/1466425805/HomepageVideoBackgroundSmall_agenda-2016-m-spring-summer-fs-17-lineup_001_Default.jpg&is_video=true&description=In+show', onclick="window.open(this.href, 'gucci',\
-                        'left=20,top=20,width=600,height=500,toolbar=1,resizable=0'); return false;")
-                          span Pinterest
-                      li.social-overlay-icon
-                        a.share-email(href='#share-by-email-overlay', data-socialtitle='In show', data-socialdescription="Men's Spring Summer 2017", data-socialurl='http://video.gucci.com/services/player/bcpid3000958488001?bctid=4961885854001&bckey=AQ~~,AAACqQLjWxk~,J7Lh4wJ33UoyWTc6fLJFK6Rrk__1umr-')
-                          span Email
-                  .social-overlay-link-wrapper(data-module='copyLink')
-                    p.copied-alert(role='alert')
-                      | Link copied to clipboard.
-                    .copyIcon
-                      span.icon  
-                    input.social-overlay-link.copy-text(type='text', value='http://video.gucci.com/services/player/bcpid3000958488001?bctid=4961885854001&bckey=AQ~~,AAACqQLjWxk~,J7Lh4wJ33UoyWTc6fLJFK6Rrk__1umr-', tab-index='0')
-                  // .social-overlay-link-wrapper
-                  button.social-overlay-inline-close
-                    | Close
-            // .share-wrapper
-        // TODO: redifine the rendering of images, when we will have all the data, included the 360 images etc.
-        // The sneaker section
+        iframe(width="100%" height="500px" src="https://www.youtube.com/embed/TwZDKpT89Y8" frameborder="0" allowfullscreen)
+        
         section.product-push.homepage(data-module='view360')
           .product-push-content-wrapper
             .product-image-wrapper
