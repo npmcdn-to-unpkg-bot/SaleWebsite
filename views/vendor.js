@@ -21,7 +21,6 @@ requirejs.config({
             searchFlyout: "modules/search-flyout",
             signInAjax: "modules/sign-in-ajax",
             thankYouNewsletter: "modules/thank-you-newsletter",
-            video: "modules/video",
             view360: "modules/view-360",
             yourAccount: "modules/your-account"
         },
