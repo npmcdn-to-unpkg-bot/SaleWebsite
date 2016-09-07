@@ -2,7 +2,7 @@ extends layout
 
 block body
   body.page-HP-USCA-s63-June-20-23-stories-conde-nast.pageType-ContentPage.template-pages--home-homepage.pageLabel-.language-en
-    include header
+    include partials/header
     #page
       // The big hero thing
       header.hero.hero-large.hero-homepage.video-parent.HomepageHeroHeader_USCA_June_20(data-module='heroLarge, video')
@@ -518,8 +518,8 @@ block body
         input#numberOfComponents(type='hidden', value='6')
       // END the sections
 
-      include footer
-      include overlays
+      include partials/footer
+      include partials/overlays
     script(type='text/javascript', src='hybris.js')
     script(type='text/javascript').
       /*<![CDATA[*/
